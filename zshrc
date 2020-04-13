@@ -100,9 +100,10 @@ source $ZSH/oh-my-zsh.sh
 unset MAILCHECK
 
 export EDITOR=nano
-export VISUAL="$EDITOR"
+export VISUAL="codium"
 
 alias jobbreg="python3 /Users/tim/Repositories/uib-it-bemanning/jobbreg.py"
 alias edit="nano ~/.zshrc"
 alias temp="osx-cpu-temp"
 alias repos="cd /Users/tim/Repositories"
+alias speedtest="speedtest-cli"
