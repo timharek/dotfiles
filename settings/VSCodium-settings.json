@@ -4,5 +4,6 @@
     "workbench.colorTheme": "Atom One Dark",
     "editor.wordWrap": "on",
     "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "window.zoomLevel": 0
 }
