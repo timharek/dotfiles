@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 unset MAILCHECK
 
 export EDITOR=nano
-export VISUAL="codium"
+#export VISUAL=
 
 alias jobbreg="python3 /Users/tim/Repositories/uib-it-bemanning/jobbreg.py"
 alias edit="nano ~/.zshrc"
