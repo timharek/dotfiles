@@ -102,7 +102,7 @@ unset MAILCHECK
 export EDITOR=nano
 #export VISUAL=
 
-alias jobbreg="python3 /Users/tim/Repositories/uib-it-bemanning/jobbreg.py"
+alias jobbreg="python3 /Users/tim/Repositories/IT-Avd/bemanning-py/jobbreg.py"
 alias edit="nano ~/.zshrc"
 alias temp="osx-cpu-temp"
 alias repos="cd /Users/tim/Repositories"
