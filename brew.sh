@@ -35,6 +35,7 @@ brew cask install joplin
 brew cask install java
 brew cask install chromedriver
 brew cask install eloston-chromium
+brew cask install alt-tab
 
 # Remove outdated versions from the cellar.
 brew cleanup
