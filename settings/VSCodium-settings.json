@@ -13,5 +13,6 @@
     "editor.formatOnType": true,
     "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
-    "vetur.format.options.tabSize": 4
+    "vetur.format.options.tabSize": 4,
+    "formattingToggle.affects": ["formatOnPaste", "formatOnSave", "formatOnType"]
 }
