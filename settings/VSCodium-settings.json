@@ -1,7 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "markdown.preview.fontSize": 18,
-    "workbench.colorTheme": "Atom One Dark",
     "editor.wordWrap": "on",
     "workbench.iconTheme": "vscode-icons",
     "editor.fontSize": 14,
@@ -14,5 +13,21 @@
     "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
     "vetur.format.options.tabSize": 4,
-    "formattingToggle.affects": ["formatOnPaste", "formatOnSave", "formatOnType"]
+    "formattingToggle.affects": [
+        "formatOnPaste",
+        "formatOnSave",
+        "formatOnType"
+    ],
+    "python.languageServer": "Microsoft",
+    "prettier.useTabs": true,
+    "update.mode": "manual",
+    "workbench.colorTheme": "Atom One Dark",
+    "telemetry.enableTelemetry": false,
+    "git.confirmSync": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+    
 }
