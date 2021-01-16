@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/tim/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
@@ -23,10 +23,10 @@ unset MAILCHECK
 export EDITOR=nano
 export VISUAL=nova
 
-REPOS="/Users/tim/Repositories"
-UIB="/Users/tim/Repositories/UiB"
+REPOS="~/Repositories"
+UIB="~/Repositories/UiB"
 
-source /Users/tim/.config/.aliasrc
+source ~/.config/.aliasrc
 
 function tull() {
 	if [ -z "$1" ]
