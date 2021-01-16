@@ -5,6 +5,8 @@ alias intel="/usr/local/bin/idea"
 alias speedtest="speedtest-cli"
 alias notes="cd ~/Documents/notes"
 alias yr="python3 $REPOS/p-yr/main.py"
+alias bu="brew update && brew upgrade"
+
 
 # UiB
 alias uib="cd $UIB"

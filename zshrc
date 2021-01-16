@@ -36,3 +36,5 @@ function tull() {
 		echo "Fuckings $1"
 	fi
 }
+
+export PATH="$HOME/.radicle/bin:$PATH"
