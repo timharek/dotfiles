@@ -1,5 +1,9 @@
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+if [[ "$(uname)" == "Darwin" ]]; then
+    export ZSH="/Users/tim/.oh-my-zsh"
+elif [[ "$(uname)" == "Linux" ]]; then
+    export ZSH="~/.oh-my-zsh"
+fi
 
 ZSH_THEME="robbyrussell"
 
@@ -20,13 +24,14 @@ source $ZSH/oh-my-zsh.sh
 
 unset MAILCHECK
 
-export EDITOR=nano
+export EDITOR=vim
 export VISUAL=nova
 
-REPOS="~/Repositories"
-UIB="~/Repositories/UiB"
+REPOS="~/dev/repos"
+UIB="$REPOS/UiB"
 
 source ~/.config/.aliasrc
+source ~/.config/.functionrc
 
 function tull() {
 	if [ -z "$1" ]
@@ -38,4 +43,7 @@ function tull() {
 }
 
 export PATH="$HOME/.radicle/bin:$PATH"
-source /home/tim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+bindkey -v
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
