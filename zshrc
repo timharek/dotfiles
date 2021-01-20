@@ -3,6 +3,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export ZSH="/Users/tim/.oh-my-zsh"
 elif [[ "$(uname)" == "Linux" ]]; then
     export ZSH="~/.oh-my-zsh"
+else
+    echo "Unknown OS, cannot locate ZSH"
 fi
 
 ZSH_THEME="robbyrussell"
