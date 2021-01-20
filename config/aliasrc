@@ -1,16 +1,22 @@
 alias edit="$EDITOR ~/.zshrc"
 alias aedit="$EDITOR ~/.config/.aliasrc"
 alias fedit="$EDITOR ~/.config/.functionrc"
+alias vedit="$EDITOR ~/.vimrc"
+
+# Navigation
 alias repos="cd $REPOS"
+alias notes="cd ~/Documents/notes"
+alias dl="cd ~/Downloads"
+
+# Binary commands
 alias intel="/usr/local/bin/idea"
 alias speedtest="speedtest-cli"
-alias notes="cd ~/Documents/notes"
 alias yr="python3 $REPOS/p-yr/main.py"
-alias dl="cd ~/Downloads"
 alias gs="git status"
 alias mv="mv -i"
 alias cp="cp -i"
 
+# macOS specific
 if [[ "$(uname)" == "Darwin" ]]; then
     alias temp="osx-cpu-temp"
     alias bu="brew update && brew upgrade"
