@@ -21,7 +21,7 @@ export EDITOR=vim
 export VISUAL=nova
 
 REPOS="~/dev/repos"
-UIB="$REPOS/UiB"
+UIB="~/edu/uib/v21"
 
 source ~/.config/.aliasrc
 source ~/.config/.functionrc
