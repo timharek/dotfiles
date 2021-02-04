@@ -15,11 +15,15 @@ alias yr="python3 $REPOS/p-yr/main.py"
 alias gs="git status"
 alias mv="mv -i"
 alias cp="cp -i"
+alias today="date +%F"
 
 # macOS specific
 if [[ "$(uname)" == "Darwin" ]]; then
     alias temp="osx-cpu-temp"
     alias bu="brew update && brew upgrade"
+    
+    # Apps
+    alias imgopt="open -a ImageOptim ."
 fi
 
 # UiB
@@ -31,3 +35,7 @@ alias jobbreg="python3 $REPOS/IT-Avd/bemanning-py/jobbreg.py"
 # VK
 alias vkas="ssh vk"
 alias vkas-pull="vkas 'cd vestkontakt.no/public_html && git pull'"
+
+# Deployment
+alias th-deploy="bundle exec jekyll build && rsync -av --delete $REPOS/timharek.no/_site/ wyd:/var/www/timharek.no/html"
+alias pic-deploy="bundle exec jekyll build && rsync -av --delete --iconv=utf-8-mac,utf-8 $REPOS/photos.timharek.no/_site/ wyd:/var/www/photos.timharek.no/html"
