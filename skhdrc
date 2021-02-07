@@ -1,0 +1,3 @@
+cmd - return : open -a /Applications/iTerm.app
+shift + cmd - n : open -a /Applications/NetNewsWire.app
+shift + cmd - b : open -a /Applications/Bitwarden.app
