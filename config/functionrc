@@ -4,41 +4,23 @@ mcd () {
     cd $1
 }
 
-nuc="tim@psycho.local:/media/external/backup"
-personal_path="/Users/tim/.personal"
-personal_volume="/Volumes/PERSONAL"
-icloud_path="/Users/tim/Library/Mobile\ Documents/com\~apple\~CloudDocs/personal"
-nuc_path="$nuc/personal_backup"
-edu_path="/Users/tim/edu"
-edu_external_path="$nuc"
+alias rsync-archive="rsync -avhz --delete --exclude '.DS_Store'"
+ICLOUD="/Users/tim/Library/Mobile Documents/com~apple~CloudDocs"
 
-# VeraCrypt
-vcm () {
-    veracrypt --text --mount --pim "0" --keyfiles "" --protect-hidden "no" $1 $2 
-    open $2
-}
+backup () {
+# Documents --> NUC
+    rsync-archive --exclude '$RECYCLE.BIN' ~/Documents/ nuc:Documents/
+# Work -->
+    rsync-archive ~/work/ nuc:Work/ 
+# Pictures --> NUC
+    rsync-archive --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' ~/Pictures/ nuc:Pictures/
+    echo 'NUC Backup sucessful!'
+# Documents --> iCloud
+    rsync-archive --exclude '$RECYCLE.BIN' ~/Documents/ $ICLOUD/Dokumenter/
+# Work --> iCloud
+    rsync-archive ~/work/ $ICLOUD/Arbeid/
+# Pictures --> iCloud
+    rsync-archive --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' ~/Pictures/ $ICLOUD/Bilder/
+    echo 'iCloud backup sucessfull!'
 
-vcdm () {
-    veracrypt --text --dismount $1
-}
-
-personal () {
-    vcm $personal_path $personal_volume
-}
-
-# Rsync
-rsyncb () {
-    rsync -av --delete --times --exclude=".DS_Store" $1 $2
-}
-
-rsyncb-icloud () {
-    rsyncb $personal_path $icloud_path
-}
-
-rsyncb-personal () {
-    rsync -av -I --exclude=".DS_Store" $personal_path $nuc_path
-}
-
-rsyncb-edu () {
-    rsyncb $edu_path $edu_external_path
 }
