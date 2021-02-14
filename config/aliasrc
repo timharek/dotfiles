@@ -1,3 +1,4 @@
+# Config files
 alias edit="$EDITOR ~/.zshrc"
 alias aedit="$EDITOR ~/.config/.aliasrc"
 alias fedit="$EDITOR ~/.config/.functionrc"
@@ -8,14 +9,22 @@ alias repos="cd $REPOS"
 alias notes="cd ~/Documents/notes"
 alias dl="cd ~/Downloads"
 
+# Repos specific
+alias th="cd $REPOS/timharek.no"
+alias vk="cd $REPOS/vestkontakt.no"
+
 # Binary commands
 alias intel="/usr/local/bin/idea"
 alias speedtest="speedtest-cli"
 alias yr="python3 $REPOS/p-yr/main.py"
 alias gs="git status"
+alias gua="git remote | xargs -L1 git push --all"
 alias mv="mv -i"
 alias cp="cp -i"
 alias today="date +%F"
+
+# Misc
+alias cv-new="weasyprint https://timharek.no/resume"
 
 # macOS specific
 if [[ "$(uname)" == "Darwin" ]]; then
