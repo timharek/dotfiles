@@ -1,3 +1,14 @@
 cmd - return : open -a /Applications/iTerm.app
+shift + cmd - return : open -a /Applications/Firefox.app
 shift + cmd - n : open -a /Applications/NetNewsWire.app
 shift + cmd - b : open -a /Applications/Bitwarden.app
+
+# focus window
+shift + alt - h : yabai -m window --focus recent
+
+# move window
+shift + cmd - h : yabai -m window --swap recent
+
+hyper - r : yabai -m space --rotate 90
+
+shift + alt - f : yabai -m window --toggle zoom-fullscreen
