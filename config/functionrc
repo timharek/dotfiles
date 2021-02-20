@@ -1,5 +1,5 @@
 # simple mkdir && cd
-mcd () {
+mcd() {
     mkdir -p $1 
     cd $1
 }
@@ -7,7 +7,7 @@ mcd () {
 alias rsync-archive="rsync -avhz --delete --exclude '.DS_Store'"
 ICLOUD="/Users/tim/Library/Mobile Documents/com~apple~CloudDocs"
 
-backup () {
+backup() {
 # Documents --> NUC
     rsync-archive --exclude '$RECYCLE.BIN' ~/Documents/ nuc:Documents/
 # Work -->
