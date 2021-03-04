@@ -2,7 +2,11 @@
 if [[ "$(uname)" == "Darwin" ]]; then
     export ZSH="/Users/tim/.oh-my-zsh"
 elif [[ "$(uname)" == "Linux" ]]; then
-    export ZSH="~/.oh-my-zsh"
+    export ZSH="/home/tim/.oh-my-zsh"
+
+    if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	    	  exec startx
+    fi
 else
     echo "Unknown OS, cannot locate ZSH"
 fi
@@ -30,4 +34,4 @@ export PATH="$HOME/.radicle/bin:$PATH"
 bindkey -v
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+source /home/tim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
