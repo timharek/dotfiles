@@ -4,6 +4,10 @@ mcd() {
     cd $1
 }
 
+t() {
+    echo $1 >> ~/todo.txt
+}
+
 alias rsync-archive="rsync -avhz --delete --exclude '.DS_Store'"
 ICLOUD="/Users/tim/Library/Mobile Documents/com~apple~CloudDocs"
 

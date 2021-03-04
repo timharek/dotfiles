@@ -1,3 +1,4 @@
+CONFIG="~/.config"
 # Config files
 alias edit="$EDITOR ~/.zshrc"
 alias aedit="$EDITOR ~/.config/.aliasrc"
@@ -21,6 +22,8 @@ alias gs="git status"
 alias gua="git remote | xargs -L1 git push --all"
 alias mv="mv -i"
 alias cp="cp -i"
+alias rm="rm -i"
+alias ss="source $CONFIG/.aliasrc && source $CONFIG/.functionrc"
 alias today="date +%F"
 
 # Misc

@@ -11,4 +11,11 @@ shift + cmd - h : yabai -m window --swap recent
 
 hyper - r : yabai -m space --rotate 90
 
-shift + alt - f : yabai -m window --toggle zoom-fullscreen
+alt + cmd - return : yabai -m window --toggle zoom-fullscreen
+
+# Space control
+alt + cmd - right : yabai -m space --focus next
+alt + cmd - left : yabai -m space --focus prev
+
+# Toggle floating window
+shift + cmd - f : yabai -m window --toggle float
