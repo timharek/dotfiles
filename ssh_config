@@ -1,0 +1,49 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host vk
+  HostName ssh.stwcp.net
+  Port 22
+  User 102389_vk
+
+Host andeby
+  HostName andeby.ss.uib.no
+  Port 22
+  User root
+
+Host nuc
+  HostName ssh.adipid.com
+  Port 22
+  User tim
+
+Host nuc-local
+  HostName 192.168.1.232
+  Port 22
+  User tim
+
+Host fribyte-portal
+  HostName login.fribyte.uib.no
+  Port 22
+  User timharek
+
+Host pihole
+  HostName 192.168.1.3
+  Port 22
+  User root
+
+Host wyd
+  HostName wyd.no
+  Port 22
+  User tim
+
+Host remark
+  HostName 192.168.1.173
+  Port 22
+  User root
+
+Host cloud
+  HostName cloud.adipid.no
+  Port 22
+  user tim
