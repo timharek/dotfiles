@@ -34,4 +34,3 @@ export PATH="$HOME/.radicle/bin:$PATH"
 bindkey -v
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source /home/tim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
