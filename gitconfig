@@ -1,0 +1,6 @@
+[user]
+	name = Tim
+	email = tim@harek.dev
+[core]
+	excludesfile = /Users/tim/.gitignore_global
+	editor = vim
