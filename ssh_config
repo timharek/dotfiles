@@ -1,12 +1,7 @@
 Host *
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
-
-Host vk
-  HostName ssh.stwcp.net
-  Port 22
-  User 102389_vk
+  IdentityFile ~/.ssh/main
 
 Host andeby
   HostName andeby.ss.uib.no
@@ -43,7 +38,3 @@ Host remark
   Port 22
   User root
 
-Host cloud
-  HostName cloud.adipid.no
-  Port 22
-  user tim
