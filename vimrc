@@ -33,6 +33,8 @@ inoremap <S-Tab> <C-d>
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
+set mouse=a
+
 " Disable Arrow keys in Normal mode
 map <up> <nop>
 map <down> <nop>
