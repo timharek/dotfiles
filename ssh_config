@@ -38,3 +38,7 @@ Host remark
   Port 22
   User root
 
+Host arch
+  HostName 192.168.1.254
+  Port 22
+  User tim
