@@ -25,11 +25,6 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 set encoding=utf-8
-" Make Shift+Tab work
-" for command mode
-nnoremap <S-Tab> <<
-" for insert mode
-inoremap <S-Tab> <C-d>
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 

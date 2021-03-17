@@ -17,5 +17,18 @@ alt + cmd - return : yabai -m window --toggle zoom-fullscreen
 alt + cmd - right : yabai -m space --focus next
 alt + cmd - left : yabai -m space --focus prev
 
+## Moving windows to spaces
+cmd + ctrl - 1 : yabai -m window --space 1
+cmd + ctrl - 2 : yabai -m window --space 2
+cmd + ctrl - 3 : yabai -m window --space 3
+cmd + ctrl - 4 : yabai -m window --space 4
+cmd + ctrl - 5 : yabai -m window --space 5
+cmd + ctrl - 6 : yabai -m window --space 6
+cmd + ctrl - 7 : yabai -m window --space 7
+cmd + ctrl - 8 : yabai -m window --space 8
+cmd + ctrl - 9 : yabai -m window --space 9
+
 # Toggle floating window
 shift + cmd - f : yabai -m window --toggle float
+
+

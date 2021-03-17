@@ -32,7 +32,7 @@ alias cv-new="weasyprint https://timharek.no/resume"
 # macOS specific
 if [[ "$(uname)" == "Darwin" ]]; then
     alias temp="osx-cpu-temp"
-    alias bu="brew update && brew upgrade"
+    alias bu="brew update && brew upgrade && brew cleanup"
     
     # Apps
     alias imgopt="open -a ImageOptim ."

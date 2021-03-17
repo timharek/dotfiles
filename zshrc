@@ -3,6 +3,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export ZSH="/Users/tim/.oh-my-zsh"
 elif [[ "$(uname)" == "Linux" ]]; then
     export ZSH="/home/tim/.oh-my-zsh"
+    PROMPT="$fg[cyan]%}$USER@%{$fg[blue]%}%m ${PROMPT}"
 
     if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	    	  exec startx
@@ -35,4 +36,3 @@ bindkey -v
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-PROMPT="$fg[cyan]%}$USER@%{$fg[blue]%}%m ${PROMPT}"
