@@ -29,6 +29,6 @@ cmd + ctrl - 8 : yabai -m window --space 8
 cmd + ctrl - 9 : yabai -m window --space 9
 
 # Toggle floating window
-shift + cmd - f : yabai -m window --toggle float
+shift + cmd - space : yabai -m window --toggle float
 
-
+cmd + alt - c : yabai -m window --grid 4:4:1:1:2:2
