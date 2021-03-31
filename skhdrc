@@ -1,6 +1,6 @@
 cmd - return : open -a /Applications/iTerm.app
 shift + cmd - return : open -a /Applications/Firefox.app
-shift + cmd - n : open -a /Applications/NetNewsWire.app
+#shift + cmd - n : open -a /Applications/NetNewsWire.app
 shift + cmd - b : open -a /Applications/Bitwarden.app
 
 # focus window
