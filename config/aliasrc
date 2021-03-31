@@ -23,7 +23,7 @@ alias gua="git remote | xargs -L1 git push --all"
 alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
-alias ss="source ~/.zshrc && source $CONFIG/.aliasrc && source $CONFIG/.functionrc"
+alias ss="source ~/.zshrc"
 alias today="date +%F"
 
 # Misc
