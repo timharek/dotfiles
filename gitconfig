@@ -4,3 +4,8 @@
 [core]
 	excludesfile = /Users/tim/.gitignore_global
 	editor = vim
+[sendemail]
+    smtpEncryption = tls
+    smtpServer = smtp.migadu.com
+    smtpUser = tim@timharek.no
+    smtpServerPort = 587
