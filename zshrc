@@ -24,7 +24,6 @@ source $ZSH/oh-my-zsh.sh
 unset MAILCHECK
 
 export EDITOR=vim
-export VISUAL=nova
 
 REPOS="~/dev/repos"
 UIB="~/edu/uib/v21"
