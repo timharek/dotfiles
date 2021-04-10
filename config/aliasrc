@@ -7,7 +7,7 @@ alias vedit="$EDITOR ~/.vimrc"
 
 # Navigation
 alias repos="cd $REPOS"
-alias notes="cd ~/Documents/notes"
+alias notes="cd ~/notes"
 alias dl="cd ~/Downloads"
 
 # Repos specific
