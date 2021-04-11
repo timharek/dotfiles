@@ -1,0 +1,4 @@
+include ~/.newsboat/color
+browser "open -ga firefox %u"
+
+auto-reload yes
