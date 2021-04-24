@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Author: Tim Hårek Andreassen
+# Created: 2021-04-24
+# ===============================
+# Deploying a Jekyll site via SSH
+ 
+display_help() {
+    echo "Jekyll _site deploy"
+    echo 
+    echo "Usage:"
+    echo "  jekyll-deploy [src dir] [dest dir]"
+    echo
+    echo "Arguments:"
+    echo "  -h, --help      Print Help (this message)"
+    echo
+    echo "Description:"
+    echo "  Builds a Jekyll site and deploys it"
+    echo
+
+    exit 0
+}
+
+deploy() {
+   bundle exec jekyll build
+
+   rsync -av --delete --iconv=utf-8-mac,utf-8 $1 $2
+}
+
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    display_help
+elif [ $# -lt 1 ]; then
+    echo "You need to provide a source directory and a destination directory"
+else
+    deploy $1 $2
+fi
