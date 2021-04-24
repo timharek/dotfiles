@@ -79,6 +79,7 @@ Plugin 'tpope/vim-liquid'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ap/vim-css-color'
 let g:gitgutter_enabled = 1 
 
 " All of your Plugins must be added before the following line
