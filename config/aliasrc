@@ -48,6 +48,9 @@ alias jobbreg="python3 $REPOS/uib/bemanning-py/jobbreg.py"
 alias vkas="ssh vk"
 alias vkas-pull="vkas 'cd vestkontakt.no/public_html && git pull'"
 
+# friByte
+alias fribyte="cd ~/dev/fribyte"
+
 # Deployment
 alias th-deploy="jekyll-deploy _site/ wyd:/var/www/timharek.no/html"
 alias pic-deploy="jekyll-deploy _site/ wyd:/var/www/photos.timharek.no/html"
