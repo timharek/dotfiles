@@ -5,67 +5,72 @@
 # ===============================
 # Backs up macOS-system using rsync
 
+ICLOUD_PATH="/Users/$USER/Library/Mobile Documents/com~apple~CloudDocs"
+
+SOURCE_DIR=(~/Documents/ ~/work/ ~/Pictures/)
+NUC_DIR=(nuc:Documents/ nuc:Work/ nuc:Pictures/)
+ICLOUD_DIR=($ICLOUD_PATH/Dokumenter/ $ICLOUD_PATH/Arbeid/ $ICLOUD_PATH/Bilder/)
+
 display_help() {
     echo "Backs up macOS-system using rsync"
     echo 
-    echo "Usage:"
+    echo "USAGE:"
     echo "  backup"
     echo
-    echo "Arguments:"
+    echo "ARGUMENTS:"
     echo "  -h, --help      Print Help (this message)"
     echo "  -d, --dry-run   Dry-run, doesn't actually do any harm"
     echo
-    echo "Description:"
+    echo "DESCRIPTION:"
     echo "  Backs up macOS-system with rsync to:"
     echo "      nuc"
     echo "      iCloud"
     echo "  From:"
-    echo "      ~/Documents"
-    echo "      ~/work"
-    echo "      ~/Pictures"
+    for dir in "${SOURCE_DIR[@]}"
+    do
+        echo "      $dir"
+    done
     echo
 
     exit 0
 }
 
-ICLOUD="/Users/$USER/Library/Mobile Documents/com~apple~CloudDocs"
 
 archive() {
-    rsync -avhz --delete --exclude '.DS_Store' --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' $1 $2
+    rsync -avhz --delete \
+        --exclude '.DS_Store' \
+        --exclude '$RECYCLE.BIN' \
+        --exclude 'Photo Booth-biblitotek' \
+        --exclude 'Photos Library.photoslibrary' \
+        $1 $2
 }
 
 backup() {
-# Documents --> NUC
-    archive ~/Documents/ nuc:Documents/
-# Work --> NUC
-    archive ~/work/ nuc:Work/
-# Pictures --> NUC
-    archive ~/Pictures/ nuc:Pictures/
-    echo 'NUC Backup sucessful!'
-# Documents --> iCloud
-    archive ~/Documents/ $ICLOUD/Dokumenter/
-# Work --> iCloud
-    archive ~/work/ $ICLOUD/Arbeid/
-# Pictures --> iCloud
-    archive ~/Pictures/ $ICLOUD/Bilder/
-    echo 'iCloud backup sucessfull!'
+    if [ "${#SOURCE_DIR[@]}" != "${#NUC_DIR[@]}" ]; then
+        echo "The amount of directories does not match"
+        exit 0
+    fi
+
+    for i in "${!SOURCE_DIR[@]}"
+    do
+        archive "${SOURCE_DIR[i]}" "${NUC_DIR[i]}"
+        archive "${SOURCE_DIR[i]}" "${ICLOUD_DIR[i]}"
+        echo "Backed up ${SOURCE_DIR[i]} successfully!"
+    done
 }
 
 backup-dry() {
-# Documents --> NUC
-    archive --dry-run ~/Documents/ nuc:Documents/
-# Work --> NUC
-    archive --dry-run ~/work/ nuc:Work/
-# Pictures --> NUC
-    archive --dry-run ~/Pictures/ nuc:Pictures/
-    echo 'NUC Backup sucessful!'
-# Documents --> iCloud
-    archive --dry-run ~/Documents/ $ICLOUD/Dokumenter/
-# Work --> iCloud
-    archive --dry-run ~/work/ $ICLOUD/Arbeid/
-# Pictures --> iCloud
-    archive --dry-run ~/Pictures/ $ICLOUD/Bilder/
-    echo 'iCloud backup sucessfull!'
+    if [ "${#SOURCE_DIR[@]}" != "${#NUC_DIR[@]}" ]; then
+        echo "The amount of directories does not match"
+        exit 0
+    fi
+
+    for i in "${!SOURCE_DIR[@]}"
+    do
+        archive --dry-run "${SOURCE_DIR[i]}" "${NUC_DIR[i]}"
+        archive --dry-run "${SOURCE_DIR[i]}" "${ICLOUD_DIR[i]}"
+        echo "Backed up ${SOURCE_DIR[i]} successfully!"
+    done
 }
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
