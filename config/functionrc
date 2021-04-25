@@ -4,31 +4,6 @@ mcd() {
     cd $1
 }
 
-t() {
-    echo $1 >> ~/todo.txt
-}
-
-alias rsync-archive="rsync -avhz --delete --exclude '.DS_Store'"
-ICLOUD="/Users/tim/Library/Mobile Documents/com~apple~CloudDocs"
-
-backup() {
-# Documents --> NUC
-    rsync-archive --exclude '$RECYCLE.BIN' ~/Documents/ nuc:Documents/
-# Work -->
-    rsync-archive ~/work/ nuc:Work/ 
-# Pictures --> NUC
-    rsync-archive --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' ~/Pictures/ nuc:Pictures/
-    echo 'NUC Backup sucessful!'
-# Documents --> iCloud
-    rsync-archive --exclude '$RECYCLE.BIN' ~/Documents/ $ICLOUD/Dokumenter/
-# Work --> iCloud
-    rsync-archive ~/work/ $ICLOUD/Arbeid/
-# Pictures --> iCloud
-    rsync-archive --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' ~/Pictures/ $ICLOUD/Bilder/
-    echo 'iCloud backup sucessfull!'
-
-}
-
 uib-exam() {
     subject=$(curl -s https://www.uib.no/emne/$1)  
     echo $subject | grep -o "[0-9]\{2\}\.[0-9]\{2\}\.[0-9]\{4\}" 

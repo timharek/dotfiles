@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Author: Tim Hårek Andreassen
+# Created: 2021-04-24
+# ===============================
+# Backs up macOS-system using rsync
+
+display_help() {
+    echo "Backs up macOS-system using rsync"
+    echo 
+    echo "Usage:"
+    echo "  backup"
+    echo
+    echo "Arguments:"
+    echo "  -h, --help      Print Help (this message)"
+    echo "  -d, --dry-run   Dry-run, doesn't actually do any harm"
+    echo
+    echo "Description:"
+    echo "  Backs up macOS-system with rsync to:"
+    echo "      nuc"
+    echo "      iCloud"
+    echo "  From:"
+    echo "      ~/Documents"
+    echo "      ~/work"
+    echo "      ~/Pictures"
+    echo
+
+    exit 0
+}
+
+ICLOUD="/Users/$USER/Library/Mobile Documents/com~apple~CloudDocs"
+
+archive() {
+    rsync -avhz --delete --exclude '.DS_Store' --exclude '$RECYCLE.BIN' --exclude 'Photo Booth-biblitotek' --exclude 'Photos Library.photoslibrary' $1 $2
+}
+
+backup() {
+# Documents --> NUC
+    archive ~/Documents/ nuc:Documents/
+# Work --> NUC
+    archive ~/work/ nuc:Work/
+# Pictures --> NUC
+    archive ~/Pictures/ nuc:Pictures/
+    echo 'NUC Backup sucessful!'
+# Documents --> iCloud
+    archive ~/Documents/ $ICLOUD/Dokumenter/
+# Work --> iCloud
+    archive ~/work/ $ICLOUD/Arbeid/
+# Pictures --> iCloud
+    archive ~/Pictures/ $ICLOUD/Bilder/
+    echo 'iCloud backup sucessfull!'
+}
+
+backup-dry() {
+# Documents --> NUC
+    archive --dry-run ~/Documents/ nuc:Documents/
+# Work --> NUC
+    archive --dry-run ~/work/ nuc:Work/
+# Pictures --> NUC
+    archive --dry-run ~/Pictures/ nuc:Pictures/
+    echo 'NUC Backup sucessful!'
+# Documents --> iCloud
+    archive --dry-run ~/Documents/ $ICLOUD/Dokumenter/
+# Work --> iCloud
+    archive --dry-run ~/work/ $ICLOUD/Arbeid/
+# Pictures --> iCloud
+    archive --dry-run ~/Pictures/ $ICLOUD/Bilder/
+    echo 'iCloud backup sucessfull!'
+}
+
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    display_help
+elif [ "$1" == "-d" ] || [ "$1" == "--dry-run" ]; then
+    backup-dry
+else
+    backup
+fi
