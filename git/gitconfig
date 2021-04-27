@@ -12,3 +12,17 @@
     smtpServerPort = 587
 [init]
 	defaultBranch = main
+[alias]
+    s = status
+    d = diff
+
+    c = commit -s -S
+
+    p = push
+    l = log --all --color --graph --pretty=format:'%Cred%h%Creset %G?%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    hd = show -p --pretty="tformat:"
+
+    rem = remote -v
+[commit]
+    gpgSign = true
+    verbose = true
