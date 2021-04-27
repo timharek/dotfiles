@@ -23,6 +23,7 @@
     hd = show -p --pretty="tformat:"
 
     rem = remote -v
+    ua = !git remote | xargs -L1 git push --all
 [commit]
     gpgSign = true
     verbose = true
