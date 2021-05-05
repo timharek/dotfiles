@@ -102,6 +102,7 @@ endif
 
 " }}}
 colorscheme onedark
+set background=dark
 
 
 " vim:foldmethod=marker:foldlevel=0
