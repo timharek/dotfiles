@@ -28,6 +28,12 @@
     "editor.fontLigatures": true,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "files.associations": {
+        "*.html": "twig"
     }
     
 }
