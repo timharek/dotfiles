@@ -24,6 +24,7 @@ alias cp="cp -i"
 alias rm="rm -i"
 alias ss="source ~/.config/zsh/.zshrc"
 alias today="date +%F"
+alias gs="git s"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
@@ -43,9 +44,6 @@ alias checklist="$REPOS/uib/checklist-py/checklist.sh"
 alias uib-vpn="sudo openconnect --user=tan039 --cafile=/Users/$USER/.cert/vpn3-uib-no.pem vpn3.uib.no"
 alias jobbreg="python3 $REPOS/uib/bemanning-py/jobbreg.py"
 
-# VK
-alias vkas="ssh vk"
-alias vkas-pull="vkas 'cd vestkontakt.no/public_html && git pull'"
 
 # friByte
 alias fribyte="cd ~/dev/fribyte"
