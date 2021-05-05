@@ -32,22 +32,18 @@ yabai -m config window_gap                   06
 
 yabai -m space 1 --label web
 yabai -m space 2 --label mail
-yabai -m space 3 --label social
 
 # window rules
 yabai -m rule --add app="^Firefox$" space=web
 yabai -m rule --add app="^Mail$" space=mail
-yabai -m rule --add app="^Signal$" space=social
 
 yabai -m rule --add app="^Systemvalg$" manage=off 
-yabai -m rule --add app="^Spotify$" manage=off layer=normal
 yabai -m rule --add app="^Pika$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Alfred Preferences$" manage=off 
 yabai -m rule --add app="^Mullvad VPN$" manage=off border=off
-yabai -m rule --add app="^Installerer$" manage=off
+yabai -m rule --add app="^Installerer$" manage=off sticky=on
 yabai -m rule --add app="^zoom.us$" manage=off
 yabai -m rule --add app="^TeamViewer$" manage=off
-yabai -m rule --add app="^Numi$" manage=off
-yabai -m rule --add app="^Mail$" manage=off
+yabai -m rule --add app="^Numi$" manage=off sticky=on
 
 echo "yabai configuration loaded.."
