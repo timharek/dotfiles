@@ -26,7 +26,7 @@ unset MAILCHECK
 export EDITOR=vim
 
 REPOS="~/dev/repos"
-UIB="~/edu/uib/v21"
+UIB="~/Utdanning/uib/"
 
 source ~/.config/.aliasrc
 source ~/.config/.functionrc
