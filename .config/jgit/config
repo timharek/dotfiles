@@ -1,3 +1,0 @@
-[filesystem "N/A|14.0.1|/dev/disk1s2"]
-	timestampResolution = 5000 nanoseconds
-	minRacyThreshold = 0 nanoseconds
