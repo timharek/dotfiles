@@ -1,7 +1,32 @@
 # .-files
 
-These are mine... they work both for macOS and Linxu, but since I use mostly macOS, that is why homebrew is here.
+My dotfiles, for both macOS and Linux.
 
-## Remember
+Most of my configurations are more or less only for macOS as this is my main OS for development.
 
-Install Homebrew before running these.
+
+## Setup
+
+<details>
+    <summary>macOS</summary>
+
+    ```sh
+    chmod +x macos
+    ./macos
+    ./brew.sh
+    ln -s .config ~/.config
+    ln -s .bin ~/.bin
+    ln -s .hammerspoon ~/.hammerspoon
+    ```
+
+</details>
+
+<details>
+    <summary>Linux</summary>
+
+    ```sh
+    ln -s .config ~/.config
+    ln -s .bin ~/.bin
+    ```
+
+</details>
