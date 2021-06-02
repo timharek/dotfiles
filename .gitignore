@@ -1,3 +1,4 @@
 .DS_Store
 .zsh_history
 .config/zsh/.zcompdump*
+*.bak
