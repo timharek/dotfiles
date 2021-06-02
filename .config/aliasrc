@@ -1,10 +1,10 @@
 CONFIG="~/.config"
 # Config files
 alias edit="$EDITOR ~/.config/zsh/.zshrc"
-alias aedit="$EDITOR ~/.config/.aliasrc"
-alias fedit="$EDITOR ~/.config/.functionrc"
+alias aedit="$EDITOR ~/.config/aliasrc"
+alias fedit="$EDITOR ~/.config/functionrc"
 alias vedit="$EDITOR ~/.vimrc"
-alias gedit="$EDITOR ~/.config/git/.gitconfig"
+alias gedit="$EDITOR ~/.config/git/config"
 
 # Navigation
 alias repos="cd $REPOS"
