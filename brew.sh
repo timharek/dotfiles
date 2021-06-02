@@ -5,6 +5,9 @@
 # Ask for the administrator password upfront.
 sudo -v
 
+# Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
@@ -15,27 +18,10 @@ brew update
 brew upgrade --all
 
 # Install useful binaries
-brew install htop
-brew install openjdk
-brew install tree
-brew install maven
-brew install deno
-brew install node
-brew install gh
+cat formulas | xargs -n 1 brew install
 
 # Install useful apps
-brew cask install appcleaner
-brew cask install dozer
-brew cask install gulp
-brew cask install pomotroid
-brew cask install vlc
-brew cask install vscodium
-brew cask install rectangle
-brew cask install joplin
-brew cask install java
-brew cask install chromedriver
-brew cask install eloston-chromium
-brew cask install alt-tab
+cat casks | xargs -n 1 brew install --cask
 
 # Remove outdated versions from the cellar.
 brew cleanup
