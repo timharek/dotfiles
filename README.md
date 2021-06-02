@@ -10,23 +10,23 @@ Most of my configurations are more or less only for macOS as this is my main OS 
 <details>
     <summary>macOS</summary>
 
-    ```sh
-    chmod +x macos
-    ./macos
-    ./brew.sh
-    ln -s .config ~/.config
-    ln -s .bin ~/.bin
-    ln -s .hammerspoon ~/.hammerspoon
-    ```
+```sh
+chmod +x macos
+./macos
+./homebrew/install.sh
+ln -s .config ~/.config
+ln -s .bin ~/.bin
+ln -s .hammerspoon ~/.hammerspoon
+```
 
 </details>
 
 <details>
     <summary>Linux</summary>
 
-    ```sh
-    ln -s .config ~/.config
-    ln -s .bin ~/.bin
-    ```
+```sh
+ln -s .config ~/.config
+ln -s .bin ~/.bin
+```
 
 </details>
