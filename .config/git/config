@@ -1,5 +1,5 @@
 [core]
-	excludesfile = ~/config/git/ignore
+	excludesfile = ~/.config/git/ignore
 	editor = vim
 [sendemail]
     smtpEncryption = tls
