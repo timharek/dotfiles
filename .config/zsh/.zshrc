@@ -28,8 +28,8 @@ export EDITOR=vim
 REPOS="~/dev/repos"
 UIB="~/Utdanning/uib/"
 
-source ~/.config/.aliasrc
-source ~/.config/.functionrc
+source ~/.config/aliasrc
+source ~/.config/functionrc
 
 bindkey -v
 
