@@ -1,0 +1,9 @@
+Host andeby
+  HostName andeby.ss.uib.no
+  Port 22
+  User root
+
+Host fribyte-portal
+  HostName login.fribyte.uib.no
+  Port 22
+  User timharek

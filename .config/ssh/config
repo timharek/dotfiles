@@ -1,0 +1,8 @@
+Include ~/.config/ssh/*.ssh
+
+Host *
+  IgnoreUnknown UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/main
+
