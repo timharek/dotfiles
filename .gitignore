@@ -2,3 +2,14 @@
 .zsh_history
 .config/zsh/.zcompdump*
 *.bak
+mysql_history
+qBittorrent
+
+.config/bundle/
+.config/cargo/
+.config/composer/
+.config/docker/
+.config/gem/
+.config/go/
+.config/pylint/
+.config/rustup/
