@@ -13,3 +13,4 @@ qBittorrent
 .config/go/
 .config/pylint/
 .config/rustup/
+.config/sanity/
