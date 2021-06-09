@@ -22,7 +22,8 @@
     rem = remote -v
     pa = !git remote | xargs -L1 git push # Push to all remotes
     pab = !git remote | xargs -L1 git push --all # Push all branches to all remotes
-    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+    cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d"
+    cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|develop' | xargs -n 1 git branch -r -d"
 [commit]
     gpgSign = true
     verbose = true
@@ -32,3 +33,7 @@
     path = ~/.config/git/config.personal
 [includeIf "gitdir:~/Utdanning/"]
     path = ~/.config/git/config.personal
+[rebase]
+	autoStash = true
+[merge]
+	autoStash = true
