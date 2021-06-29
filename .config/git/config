@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.config/git/ignore
-	editor = vim
+	editor = nvim
 [sendemail]
     smtpEncryption = tls
     smtpServer = smtp.migadu.com
