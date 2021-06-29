@@ -23,7 +23,7 @@ source $ZSH/oh-my-zsh.sh
 
 unset MAILCHECK
 
-export EDITOR=vim
+export EDITOR=nvim
 
 REPOS="~/dev/repos"
 UIB="~/Utdanning/uib/"

@@ -14,3 +14,4 @@ qBittorrent
 .config/pylint/
 .config/rustup/
 .config/sanity/
+.config/nvim/bundle

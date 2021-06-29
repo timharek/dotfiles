@@ -3,7 +3,7 @@ CONFIG="~/.config"
 alias edit="$EDITOR ~/.config/zsh/.zshrc"
 alias aedit="$EDITOR ~/.config/aliasrc"
 alias fedit="$EDITOR ~/.config/functionrc"
-alias vedit="$EDITOR ~/.vimrc"
+alias vedit="$EDITOR ~/.config/nvim/init.vim"
 alias gedit="$EDITOR ~/.config/git/config"
 
 # Navigation
@@ -25,6 +25,7 @@ alias rm="rm -i"
 alias ss="source ~/.config/zsh/.zshrc"
 alias today="date +%F"
 alias gs="git s"
+alias vim="nvim"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
@@ -47,6 +48,9 @@ alias jobbreg="python3 $REPOS/uib/bemanning-py/jobbreg.py"
 
 # friByte
 alias fribyte="cd ~/dev/fribyte"
+
+# Netlife
+alias netlife="cd ~/dev/netlife"
 
 # Deployment
 alias th-deploy="jekyll-deploy _site/ wyd:/var/www/timharek.no/html"
