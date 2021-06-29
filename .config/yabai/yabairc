@@ -28,7 +28,7 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config window_gap                   06
+yabai -m config window_gap                   20
 
 yabai -m space 1 --label web
 yabai -m space 2 --label mail
