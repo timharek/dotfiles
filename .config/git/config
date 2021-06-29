@@ -31,6 +31,8 @@
     path = ~/.config/git/config.netlife
 [includeIf "gitdir:~/dev/repos/"]
     path = ~/.config/git/config.personal
+[includeIf "gitdir:~/dev/vk/"]
+    path = ~/.config/git/config.personal
 [includeIf "gitdir:~/Utdanning/"]
     path = ~/.config/git/config.personal
 [rebase]
