@@ -1,17 +1,15 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "markdown.preview.fontSize": 18,
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "off",
     "workbench.iconTheme": "vscode-icons",
     "editor.fontSize": 14,
-    "window.zoomLevel": 1,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "prettier.printWidth": 120,
-    "prettier.tabWidth": 4,
     "vetur.format.options.tabSize": 4,
     "formattingToggle.affects": [
         "formatOnPaste",
@@ -19,7 +17,6 @@
         "formatOnType"
     ],
     "python.languageServer": "Microsoft",
-    "prettier.useTabs": true,
     "update.mode": "manual",
     "workbench.colorTheme": "Atom One Dark",
     "telemetry.enableTelemetry": false,
@@ -34,6 +31,11 @@
     },
     "files.associations": {
         "*.html": "twig"
-    }
-    
+    },
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "prettier.tabWidth": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "window.zoomLevel": 1,
 }
