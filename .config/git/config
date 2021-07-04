@@ -33,6 +33,8 @@
     path = ~/.config/git/config.personal
 [includeIf "gitdir:~/dev/vk/"]
     path = ~/.config/git/config.personal
+[includeIf "gitdir:~/dev/fribyte/"]
+    path = ~/.config/git/config.personal
 [includeIf "gitdir:~/Utdanning/"]
     path = ~/.config/git/config.personal
 [rebase]
