@@ -15,3 +15,5 @@ qBittorrent
 .config/rustup/
 .config/sanity/
 .config/nvim/bundle
+.config/nvim/plugged
+.config/nvim/runtime
