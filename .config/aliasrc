@@ -53,5 +53,5 @@ alias fribyte="cd ~/dev/fribyte"
 alias netlife="cd ~/dev/netlife"
 
 # Deployment
-alias th-deploy="jekyll-deploy _site/ wyd:/var/www/timharek.no/html"
+alias th-deploy="zola build && rsync -av --delete --iconv=utf-8-mac,utf-8 public/ wyd:/var/www/timharek.no/html"
 alias pic-deploy="jekyll-deploy _site/ wyd:/var/www/photos.timharek.no/html"
