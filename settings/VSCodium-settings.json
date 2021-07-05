@@ -38,4 +38,5 @@
     "prettier.tabWidth": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "window.zoomLevel": 1,
+    "redhat.telemetry.enabled": false,
 }
