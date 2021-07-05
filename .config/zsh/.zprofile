@@ -29,3 +29,7 @@ export GOPATH="$XDG_DATA_HOME"/go
 
 # Python
 export PYLINTHOME="$XDG_CACHE_HOME"/pylint
+
+# Less
+export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
