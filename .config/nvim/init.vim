@@ -11,6 +11,8 @@ set showcmd
 set showmatch
 set modelines=1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/
+set background=dark
+set termguicolors
 syntax on
 
 " Plug {{{
