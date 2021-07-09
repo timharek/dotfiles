@@ -12,16 +12,16 @@ scrolling:
   multiplier: 3
 font:
   normal:
-    family: Menlo
+    family: JetBrains Mono
     style: Regular
   bold:
-    family: Menlo
+    family: JetBrains Mono
     style: Bold
   italic:
-    family: Menlo
+    family: JetBrains Mono
     style: Italic
   bold_italic:
-    family: Menlo
+    family: JetBrains Mono
     style: Bold Italic
   size: 16.0
   use_thin_strokes: true
@@ -33,7 +33,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
+    background: '0x282c34'
     foreground: '0xabb2bf'
 
     # Bright and dim foreground colors
