@@ -42,13 +42,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias imgopt="open -a ImageOptim ."
 fi
 
-# UiB
-alias uib="cd $UIB"
-alias checklist="$REPOS/uib/checklist-py/checklist.sh"
-alias uib-vpn="sudo openconnect --user=tan039 --cafile=/Users/$USER/.cert/vpn3-uib-no.pem vpn3.uib.no"
-alias jobbreg="python3 $REPOS/uib/bemanning-py/jobbreg.py"
-
-
 # friByte
 alias fribyte="cd ~/dev/fribyte"
 
