@@ -3,8 +3,3 @@ mcd() {
     mkdir -p $1 
     cd $1
 }
-
-uib-exam() {
-    subject=$(curl -s https://www.uib.no/emne/$1)  
-    echo $subject | grep -o "[0-9]\{2\}\.[0-9]\{2\}\.[0-9]\{4\}" 
-}
