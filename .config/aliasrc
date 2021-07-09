@@ -26,6 +26,9 @@ alias ss="source ~/.config/zsh/.zshrc"
 alias today="date +%F"
 alias gs="git s"
 alias vim="nvim"
+alias l="exa"
+alias ls="exa"
+alias cat="bat"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
