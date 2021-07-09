@@ -10,6 +10,7 @@ set cursorline
 set showcmd
 set showmatch
 set modelines=1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/
 syntax on
 
 " Plug {{{
@@ -67,8 +68,13 @@ let g:prettier#quickfix_enabled = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 " }}}
+
+" Plugin settings {{{
 let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+" }}}
 
 colorscheme onedark
 " vim:foldmethod=marker:foldlevel=0
