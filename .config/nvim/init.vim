@@ -13,7 +13,11 @@ set modelines=1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/
 set background=dark
 set termguicolors
+set nocompatible
+filetype plugin on
 syntax on
+
+let mapleader=","
 
 " Plug {{{
 call plug#begin('~/.config/nvim/plugged')
@@ -31,6 +35,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'joshdick/onedark.vim'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 " }}}
@@ -77,6 +82,21 @@ let g:user_emmet_expandabbr_key = '<C-e>'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 " }}}
+
+" LSP's {{{
+lua << EOF
+require'lspconfig'.pyright.setup{}
+
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+EOF
+" }}}
+
 
 colorscheme onedark
 " vim:foldmethod=marker:foldlevel=0
