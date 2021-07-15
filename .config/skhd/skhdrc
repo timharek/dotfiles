@@ -1,9 +1,10 @@
-cmd - return : open -a /Applications/Alacritty.app
+cmd - return : open -a /Applications/iTerm.app
+#cmd - return : open -a /Applications/Alacritty.app
 shift + cmd - return : open -a /Applications/Firefox.app
 #shift + cmd - n : open -a /Applications/NetNewsWire.app
 shift + cmd - b : open -a /Applications/Bitwarden.app
 alt + cmd - t : date +%F | pbcopy
-shift + cmd - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t notetaker -e notetaker
+#shift + cmd - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t notetaker -e notetaker
 
 # focus window
 shift + alt - h : yabai -m window --focus recent
