@@ -9,7 +9,6 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "prettier.printWidth": 120,
     "vetur.format.options.tabSize": 4,
     "formattingToggle.affects": [
         "formatOnPaste",
@@ -35,7 +34,6 @@
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "prettier.tabWidth": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "window.zoomLevel": 1,
     "redhat.telemetry.enabled": false,
