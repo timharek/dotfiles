@@ -22,20 +22,14 @@
     rem = remote -v
     pa = !git remote | xargs -L1 git push # Push to all remotes
     pab = !git remote | xargs -L1 git push --all # Push all branches to all remotes
-    cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d"
-    cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|develop' | xargs -n 1 git branch -r -d"
+    cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|develop\\|production' | xargs -n 1 git branch -d"
+    cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|develop\\|production' | xargs -n 1 git branch -r -d"
 [commit]
     gpgSign = true
     verbose = true
-[includeIf "gitdir:~/dev/netlife/"]
+[includeIf "gitdir:~/Netlife/"]
     path = ~/.config/git/config.netlife
-[includeIf "gitdir:~/dev/repos/"]
-    path = ~/.config/git/config.personal
-[includeIf "gitdir:~/dev/vk/"]
-    path = ~/.config/git/config.personal
-[includeIf "gitdir:~/dev/fribyte/"]
-    path = ~/.config/git/config.personal
-[includeIf "gitdir:~/Utdanning/"]
+[includeIf "gitdir:~/repos/"]
     path = ~/.config/git/config.personal
 [rebase]
 	autoStash = true

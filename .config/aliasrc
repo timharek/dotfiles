@@ -13,7 +13,9 @@ alias dl="cd ~/Downloads"
 
 # Repos specific
 alias th="cd $REPOS/timharek.no"
-alias vk="cd ~/dev/vk/vestkontakt.no"
+alias vk="cd $REPOS/vk/vestkontakt.no"
+alias netlife="cd ~/Netlife"
+alias fribyte="cd $REPOS/fribyte"
 
 # Binary commands
 alias intel="/usr/local/bin/idea"
@@ -41,12 +43,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # Apps
     alias imgopt="open -a ImageOptim ."
 fi
-
-# friByte
-alias fribyte="cd ~/dev/fribyte"
-
-# Netlife
-alias netlife="cd ~/dev/netlife"
 
 # Deployment
 alias th-deploy="zola build && rsync -av --delete --iconv=utf-8-mac,utf-8 public/ wyd:/var/www/timharek.no/html"
