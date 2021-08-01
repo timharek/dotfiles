@@ -11,4 +11,5 @@ chmod +x macos
 ln -s .config ~/.config
 ln -s .bin ~/.bin
 ln -s .hammerspoon ~/.hammerspoon
+ln -s settings/VSCodium-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ```
