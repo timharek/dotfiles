@@ -17,6 +17,9 @@ set nocompatible
 filetype plugin on
 syntax on
 
+" Make double-<Esc> clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
 let mapleader=","
 
 " Plug {{{
@@ -79,7 +82,6 @@ let g:ctrlp_cmd = 'CtrlP'
 " Plugin settings {{{
 let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
-let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 " }}}
 
