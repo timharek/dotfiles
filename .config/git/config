@@ -16,6 +16,7 @@
     ca = c -a
 
     p = push
+    pnew = !git push --set-upstream origin $(git branch --show-current)
     l = log --all --color --graph --pretty=format:'%Cred%h%Creset %G?%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     hd = show -p --pretty="tformat:"
 
