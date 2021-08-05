@@ -17,7 +17,6 @@
     ],
     "python.languageServer": "Microsoft",
     "update.mode": "manual",
-    "workbench.colorTheme": "Atom One Dark",
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
     "editor.fontFamily": "JetBrains Mono",
@@ -37,4 +36,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "window.zoomLevel": 1,
     "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "One Dark Pro",
 }
