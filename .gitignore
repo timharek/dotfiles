@@ -20,3 +20,4 @@ qBittorrent
 .config/configstore
 .config/broot
 .config/nvm
+.config/gh/hosts.yml
