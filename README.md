@@ -8,8 +8,8 @@ My dotfiles, mainly for my macOS setup.
 chmod +x macos
 ./macos
 ./homebrew/install.sh
-ln -s .config ~/.config
-ln -s .bin ~/.bin
-ln -s .hammerspoon ~/.hammerspoon
-ln -s settings/VSCodium-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/repos/dotfiles/.config ~/.config
+ln -s ~/repos/dotfiles/.bin ~/.bin
+ln -s ~/repos/dotfiles/.hammerspoon ~/.hammerspoon
+ln -s ~/repos/dotfiles/settings/VSCodium-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ```
