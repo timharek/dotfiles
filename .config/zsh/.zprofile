@@ -19,6 +19,7 @@ BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 # Ruby gem
 export GEM_HOME="$XDG_DATA_HOME"/gem
 export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # MySQL
 export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history 
