@@ -7,6 +7,7 @@ aom
 aspell
 assimp
 atk
+bat
 bdw-gc
 berkeley-db
 bitwarden-cli
@@ -30,6 +31,7 @@ double-conversion
 duck
 emacs
 enchant
+exa
 ffmpeg
 fftw
 figlet
@@ -41,10 +43,10 @@ fribidi
 fzf
 gcc
 gd
-gdb
 gdbm
 gdk-pixbuf
 gettext
+gh
 ghostscript
 giflib
 git
@@ -61,7 +63,6 @@ gobject-introspection
 gpgme
 graphite2
 graphviz
-grit
 gsettings-desktop-schemas
 gspell
 gtk+
@@ -81,7 +82,6 @@ hwloc
 icu4c
 ilmbase
 imagemagick
-imageoptim-cli
 imapsync
 imath
 isl
@@ -214,6 +214,7 @@ pixman
 pkg-config
 poppler
 popt
+prettier
 protobuf
 py3cairo
 pygobject3
@@ -243,6 +244,7 @@ starship
 stoken
 szip
 talloc
+task
 taskell
 tcl-tk
 tepl
@@ -251,6 +253,7 @@ theora
 tmux
 tokyo-cabinet
 tree
+tree-sitter
 uchardet
 unbound
 unibilium
@@ -271,10 +274,11 @@ xorgproto
 xvid
 xxhash
 xz
-yabai
 yarn
 youtube-dl
 zeromq
 zimg
+zola
+zsh-autosuggestions
 zsh-syntax-highlighting
 zstd
