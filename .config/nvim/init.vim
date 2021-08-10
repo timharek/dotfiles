@@ -14,6 +14,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/
 set background=dark
 set termguicolors
 set nocompatible
+set updatetime=100
 filetype plugin on
 syntax on
 
@@ -96,6 +97,18 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require'lspconfig'.html.setup {
   capabilities = capabilities,
 }
+
+require'lspconfig'.jsonls.setup {
+    commands = {
+      Format = {
+        function()
+          vim.lsp.buf.range_formatting({},{0,0},{vim.fn.line("$"),0})
+        end
+      }
+    }
+}
+
+require'lspconfig'.yamlls.setup{}
 EOF
 " }}}
 
