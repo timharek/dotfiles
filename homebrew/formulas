@@ -201,6 +201,7 @@ openssh
 openssl@1.1
 opus
 orc
+osx-cpu-temp
 p11-kit
 pandoc
 pango
