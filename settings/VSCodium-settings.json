@@ -34,7 +34,8 @@
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "window.zoomLevel": 1,
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 1,
 }
