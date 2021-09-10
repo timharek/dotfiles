@@ -109,6 +109,8 @@ require'lspconfig'.jsonls.setup {
 }
 
 require'lspconfig'.yamlls.setup{}
+
+require'lspconfig'.denols.setup{}
 EOF
 " }}}
 
