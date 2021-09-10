@@ -17,6 +17,7 @@ qBittorrent
 .config/nvim/bundle
 .config/nvim/plugged
 .config/nvim/runtime
+.config/nvim/spell
 .config/configstore
 .config/broot
 .config/nvm
