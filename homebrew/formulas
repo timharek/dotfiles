@@ -78,6 +78,7 @@ hicolor-icon-theme
 htop
 httpie
 hugo
+hunspell
 hwloc
 icu4c
 ilmbase
@@ -158,6 +159,7 @@ libxext
 libxml2
 libxrender
 libyaml
+libzip
 little-cms2
 lmdb
 lua
@@ -166,6 +168,7 @@ luv
 lz4
 lzo
 m4
+macos-term-size
 make
 maven
 mozjpeg
@@ -251,6 +254,7 @@ tcl-tk
 tepl
 tesseract
 theora
+tldr
 tmux
 tokyo-cabinet
 tree
@@ -261,6 +265,7 @@ unibilium
 utf8proc
 vala
 vapoursynth
+vercel-cli
 vifm
 vim
 vips
