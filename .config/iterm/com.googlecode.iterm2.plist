@@ -6,6 +6,10 @@
 	<true/>
 	<key>BellRateLimit</key>
 	<real>0.0</real>
+	<key>ClosingTmuxTabKillsTmuxWindows</key>
+	<true/>
+	<key>ClosingTmuxTabKillsTmuxWindows_selection</key>
+	<integer>0</integer>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>TheOne</key>
@@ -1836,7 +1840,7 @@
 		</dict>
 	</array>
 	<key>OpenTmuxWindowsIn</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1871,6 +1875,8 @@
 		</dict>
 	</dict>
 	<key>Print In Black And White</key>
+	<true/>
+	<key>SeparateStatusBarsPerPane</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
