@@ -14,6 +14,7 @@ bitwarden-cli
 boost
 brotli
 c-ares
+ca-certificates
 cairo
 cask
 cfitsio
@@ -24,6 +25,7 @@ coreutils
 dav1d
 dbus
 deno
+diff-so-fancy
 docbook
 docbook-xsl
 docker
