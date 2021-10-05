@@ -14,14 +14,17 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/
 set background=dark
 set termguicolors
 set nocompatible
-set updatetime=100
+set updatetime=50
+set scrolloff=8
+set signcolumn=yes
+set colorcolumn=80
 filetype plugin on
 syntax on
 
 " Make double-<Esc> clear search highlights
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
-let mapleader=","
+let mapleader=" "
 
 " Plug {{{
 call plug#begin('~/.config/nvim/plugged')
@@ -56,6 +59,7 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set expandtab
+set smartindent
 " }}}
 
 " tmux {{{
