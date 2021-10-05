@@ -1,11 +1,6 @@
 [core]
 	excludesfile = ~/.config/git/ignore
 	editor = nvim
-[sendemail]
-    smtpEncryption = tls
-    smtpServer = smtp.migadu.com
-    smtpUser = tim@timharek.no
-    smtpServerPort = 587
 [init]
 	defaultBranch = main
 [alias]
