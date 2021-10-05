@@ -30,6 +30,7 @@ alias gs="git s"
 alias vim="nvim"
 alias l="exa"
 alias ls="exa"
+alias tree="exa -T"
 alias cat="bat"
 
 # Misc
