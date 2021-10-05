@@ -3,8 +3,7 @@
 	email = tim@harek.dev
 	signingkey = 34853DFD0B419A0D
 [sendemail]
-    smtpEncryption = tls
-    smtpServer = smtp.migadu.com
-    smtpUser = tim@timharek.no
-    smtpServerPort = 587
-
+  smtpEncryption = tls
+  smtpServer = smtp.migadu.com
+  smtpUser = tim@timharek.no
+  smtpServerPort = 587

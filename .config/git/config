@@ -4,33 +4,33 @@
 [init]
 	defaultBranch = main
 [alias]
-    s = status
-    d = diff
+  s = status
+  d = diff
 
-    c = commit -s -S
-    ca = c -a
+  c = commit -s -S
+  ca = c -a
 
-    p = push
-    pnew = !git push --set-upstream origin $(git branch --show-current)
+  p = push
+  pnew = !git push --set-upstream origin $(git branch --show-current)
 
-    co = checkout
+  co = checkout
 
-    l = log --all --color --graph --pretty=format:'%Cred%h%Creset %G?%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    hd = show -p --pretty="tformat:"
+  l = log --all --color --graph --pretty=format:'%Cred%h%Creset %G?%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  hd = show -p --pretty="tformat:"
 
-    rem = remote -v
-    pa = !git remote | xargs -L1 git push # Push to all remotes
-    pab = !git remote | xargs -L1 git push --all # Push all branches to all remotes
+  rem = remote -v
+  pa = !git remote | xargs -L1 git push # Push to all remotes
+  pab = !git remote | xargs -L1 git push --all # Push all branches to all remotes
 
-    cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|production' | xargs -n 1 git branch -d"
-    cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\||master\\develop\\|production' | xargs -n 1 git branch -r -d"
+  cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|production' | xargs -n 1 git branch -d"
+  cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\||master\\develop\\|production' | xargs -n 1 git branch -r -d"
 [commit]
-    gpgSign = true
-    verbose = true
+  gpgSign = true
+  verbose = true
 [includeIf "gitdir:~/Netlife/"]
-    path = ~/.config/git/config.netlife
+  path = ~/.config/git/config.netlife
 [includeIf "gitdir:~/repos/"]
-    path = ~/.config/git/config.personal
+  path = ~/.config/git/config.personal
 [rebase]
 	autoStash = true
 [merge]
