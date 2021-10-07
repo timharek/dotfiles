@@ -43,7 +43,6 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neovim/nvim-lspconfig'
 
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
@@ -86,7 +85,6 @@ let g:prettier#quickfix_enabled = 0
 let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 
 nnoremap <c-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
