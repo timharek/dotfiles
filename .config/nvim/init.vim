@@ -29,7 +29,6 @@ let mapleader=" "
 " Plug {{{
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-liquid'
@@ -43,6 +42,10 @@ Plug 'joshdick/onedark.vim'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neovim/nvim-lspconfig'
+
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 " }}}
@@ -79,15 +82,21 @@ endif
 let g:prettier#quickfix_enabled = 0
 " }}}
 
-" CtrlP {{{
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-" }}}
-
 " Plugin settings {{{
 let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+
+nnoremap <c-p> <cmd>lua require('telescope.builtin').git_files()<cr>
+nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fs <cmd>lua require('telescope.builtin').grep_string()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').file_browser()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_references()<cr>
+
 " }}}
 
 " LSP's {{{
