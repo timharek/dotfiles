@@ -42,6 +42,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neovim/nvim-lspconfig'
+Plug 'evidens/vim-twig'
+Plug 'webdevel/tabulous'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -100,6 +102,8 @@ nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_references()<cr>
 " LSP's {{{
 lua << EOF
 require'lspconfig'.pyright.setup{}
+
+require'lspconfig'.tailwindcss.setup{}
 
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
