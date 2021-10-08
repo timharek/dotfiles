@@ -9,6 +9,8 @@
 
   c = commit -s -S
   ca = c -a
+  a = c --amend 
+  ae = a --no-edit
 
   p = push
   pnew = !git push --set-upstream origin $(git branch --show-current)
