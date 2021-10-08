@@ -32,6 +32,7 @@ alias l="exa"
 alias ls="exa"
 alias tree="exa -T"
 alias cat="bat"
+alias tp="tmux new -s $(basename $PWD)"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
