@@ -22,6 +22,7 @@ cmake
 cmatrix
 composer
 coreutils
+dateutils
 dav1d
 dbus
 deno
@@ -29,11 +30,13 @@ diff-so-fancy
 docbook
 docbook-xsl
 docker
+dog
 double-conversion
 duck
 emacs
 enchant
 exa
+fd
 ffmpeg
 fftw
 figlet
@@ -126,6 +129,7 @@ libksba
 liblqr
 libmatio
 libmpc
+libnghttp2
 libogg
 libomp
 libotr
@@ -187,6 +191,7 @@ netpbm
 nettle
 newsboat
 nghttp2
+nginx
 nmap
 node
 notmuch
@@ -224,6 +229,7 @@ prettier
 protobuf
 py3cairo
 pygobject3
+python@3.10
 python@3.8
 python@3.9
 qrencode
@@ -231,6 +237,7 @@ qt
 qt@5
 rav1e
 readline
+ripgrep
 rsync
 rtmpdump
 rubberband
@@ -271,6 +278,7 @@ vercel-cli
 vifm
 vim
 vips
+w3m
 webp
 wget
 wimlib
