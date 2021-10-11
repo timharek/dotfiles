@@ -11,3 +11,8 @@ Host wyd
 Host datatukler
   HostName git.datatukler.no
   User root
+
+host bitbucket.org
+  HostKeyAlgorithms=+ssh-rsa
+  PubkeyAcceptedKeyTypes=+ssh-rsa
+
