@@ -33,9 +33,10 @@
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": 1,
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
 }
