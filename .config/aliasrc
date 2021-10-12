@@ -33,7 +33,7 @@ alias ls="exa --sort=type"
 alias exa="exa --sort=type"
 alias tree="exa -T"
 alias cat="bat"
-alias tp="tmux new -s $(basename $PWD)"
+alias tp="tmux new -s $(basename $(pwd))"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
