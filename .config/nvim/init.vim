@@ -26,6 +26,8 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 let mapleader=" "
 
+nnoremap <leader>ct :r!date "+\%F"<cr>
+
 " Plug {{{
 call plug#begin('~/.config/nvim/plugged')
 
