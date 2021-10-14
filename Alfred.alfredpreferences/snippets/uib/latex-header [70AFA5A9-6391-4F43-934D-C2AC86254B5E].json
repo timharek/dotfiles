@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "---\npapersize: a4\nheader-includes: |\n    \\usepackage{fancyhdr}\n    \\pagestyle{fancy}\n    \\fancyhead[CO,CE]{Tim Hårek Andreassen}\n    \\fancyfoot[CO,CE]{University of Bergen}\n    \\fancyfoot[LE,RO]{\\thepage}\n---",
+    "uid" : "70AFA5A9-6391-4F43-934D-C2AC86254B5E",
+    "name" : "latex-header",
+    "keyword" : "lheader"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "---\nlayout: shared-post\ndate: {date:yyyy-MM-dd HH:mm:ss} +0100\ntitle: \nexcerpt: \ntags: shared \nlink: \n---\n",
+    "uid" : "37C4413A-F335-4C27-A0F5-DAECD5AD0D02",
+    "name" : "shared-post",
+    "keyword" : ""
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "---\nlayout: post\ndate: {date:yyyy-MM-dd HH:mm:ss} +0100\ntitle: \nexcerpt: \nauthor: Tim Hårek\ntags: \n---",
+    "uid" : "DEBD9244-CD0E-4745-AC5B-B2DF706AFC59",
+    "name" : "post",
+    "keyword" : ""
+  }
+}
