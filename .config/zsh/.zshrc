@@ -23,8 +23,6 @@ unset MAILCHECK
 
 export EDITOR=nvim
 
-REPOS="~/repos"
-
 source ~/.config/aliasrc
 source ~/.config/functionrc
 

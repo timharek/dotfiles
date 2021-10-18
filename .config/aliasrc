@@ -1,4 +1,7 @@
 CONFIG="~/.config"
+REPOS="~/repos"
+export DL="~/Downloads"
+
 # Config files
 alias edit="$EDITOR ~/.config/zsh/.zshrc"
 alias aedit="$EDITOR ~/.config/aliasrc"
@@ -9,7 +12,7 @@ alias gedit="$EDITOR ~/.config/git/config"
 # Navigation
 alias repos="cd $REPOS"
 alias notes="cd ~/notes"
-alias dl="cd ~/Downloads"
+alias dl="cd $DL"
 
 # Repos specific
 alias th="cd $REPOS/timharek.no"
