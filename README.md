@@ -2,6 +2,15 @@
 
 My dotfiles, mainly for my macOS setup.
 
+## What I use
+
+- OS: macOS 11 Big Sur
+- Shell: [`zsh`](.config/zsh)
+- Terminal: [iterm2](.config/iterm)
+- Editor: [`nvim`](.config/nvim)
+- Browser: Firefox
+- Package manager: Homebrew
+
 ## Setup
 
 ```sh
