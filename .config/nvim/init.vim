@@ -50,6 +50,14 @@ Plug 'webdevel/tabulous'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+
+" For vsnip user.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
 call plug#end()
 " }}}
 
@@ -90,6 +98,7 @@ let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+" Telescope
 nnoremap <c-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -99,36 +108,56 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').file_browser()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_references()<cr>
 
-" }}}
+" LSP {{{
+set completeopt=menu,menuone,noselect
 
-" LSP's {{{
 lua << EOF
-require'lspconfig'.pyright.setup{}
+local cmp = require'cmp'
 
-require'lspconfig'.tailwindcss.setup{}
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      -- For `vsnip` user.
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
+  },
+  mapping = {
+    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-e>'] = cmp.mapping.close(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    -- For vsnip user.
+    { name = 'vsnip' },
 
---Enable (broadcasting) snippet capability for completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+    { name = 'buffer' },
+  }
+})
+
+require'lspconfig'.pyright.setup {
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
+
+require'lspconfig'.tailwindcss.setup {
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
 
 require'lspconfig'.html.setup {
-  capabilities = capabilities,
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
-require'lspconfig'.jsonls.setup {
-    commands = {
-      Format = {
-        function()
-          vim.lsp.buf.range_formatting({},{0,0},{vim.fn.line("$"),0})
-        end
-      }
-    }
+require'lspconfig'.yamlls.setup {
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
-require'lspconfig'.yamlls.setup{}
-
-require'lspconfig'.denols.setup{}
+require'lspconfig'.denols.setup {
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
 EOF
+
 " }}}
 
 
