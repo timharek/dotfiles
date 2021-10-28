@@ -39,4 +39,5 @@
     "window.zoomLevel": 1,
     "eslint.format.enable": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "eslint.alwaysShowStatus": true,
 }
