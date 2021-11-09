@@ -25,3 +25,5 @@ qBittorrent
 .config/iterm2
 .config/zsh/.zsh_sessions
 .config/aerc/accounts.conf
+.config/valet
+.config/calcurse
