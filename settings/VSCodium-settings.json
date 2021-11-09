@@ -40,4 +40,5 @@
     "eslint.format.enable": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "eslint.alwaysShowStatus": true,
+    "vsicons.dontShowNewVersionMessage": true,
 }
