@@ -44,3 +44,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Composer
 export PATH="$PATH:~/.config/composer/vendor/bin"
+
+# Yarn
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+# AWS
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials 
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config

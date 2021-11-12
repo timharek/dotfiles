@@ -27,3 +27,6 @@ qBittorrent
 .config/aerc/accounts.conf
 .config/valet
 .config/calcurse
+.config/task
+.config/yarn
+.config/aws
