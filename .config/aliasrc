@@ -50,6 +50,3 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # Apps
     alias imgopt="open -a ImageOptim ."
 fi
-
-# Deployment
-alias pic-deploy="jekyll-deploy _site/ wyd:/var/www/photos.timharek.no/html"
