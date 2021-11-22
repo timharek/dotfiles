@@ -30,3 +30,5 @@ qBittorrent
 .config/task
 .config/yarn
 .config/aws
+.bin/sbanken
+.config/sbanken
