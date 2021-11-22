@@ -34,3 +34,13 @@ chmod +x install.sh update.sh
 ./install.sh # To install brew formulas and casks
 ./update.sh # To update the lists `formulas` and `casks`
 ```
+
+### NPM
+
+```sh
+cd npm
+chmod +x install.sh update.sh
+
+./install.sh # To install global npm packages
+./update.sh # To update the list with global npm packages
+```
