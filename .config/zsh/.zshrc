@@ -32,4 +32,4 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-task
+task ready
