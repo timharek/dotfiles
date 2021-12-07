@@ -29,6 +29,8 @@ let mapleader=" "
 nnoremap <leader>ct :r!date "+\%F"<cr>
 nnoremap <leader>pv :Ex<CR>
 
+map gf :tabe <cfile><cr>
+
 " Plug {{{
 call plug#begin('~/.config/nvim/plugged')
 
