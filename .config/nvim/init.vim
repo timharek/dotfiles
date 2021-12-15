@@ -28,6 +28,7 @@ let mapleader=" "
 
 nnoremap <leader>ct :r!date "+\%F"<cr>
 nnoremap <leader>pv :Ex<CR>
+nnoremap <leader>t :tabnew<CR>
 
 map gf :tabe <cfile><cr>
 
@@ -110,6 +111,7 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').file_browser()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_references()<cr>
+nnoremap z= <cmd>lua require('telescope.builtin').spell_suggest()<cr>
 
 " LSP {{{
 set completeopt=menu,menuone,noselect
