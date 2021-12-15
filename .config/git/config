@@ -6,6 +6,10 @@
 [alias]
   s = status
   d = diff
+  b = branch 
+  ba = branch -av
+  bD = branch -D
+  bd = branch -d
 
   c = commit -s -S
   ca = c -a
