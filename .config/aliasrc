@@ -21,9 +21,7 @@ alias netlife="cd ~/Netlife"
 alias fribyte="cd $REPOS/fribyte"
 
 # Binary commands
-alias intel="/usr/local/bin/idea"
 alias speedtest="speedtest-cli"
-alias yr="python3 $REPOS/p-yr/main.py"
 alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
