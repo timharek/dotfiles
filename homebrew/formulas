@@ -3,14 +3,19 @@ adwaita-icon-theme
 aerc
 amfora
 amtk
+ansible
 aom
 apr
 apr-util
 argon2
+ascii-image-converter
+asciinema
 aspell
 assimp
 atk
 autoconf
+bash
+bash-completion
 bat
 bdw-gc
 berkeley-db
@@ -23,6 +28,7 @@ cairo
 calcurse
 cask
 cfitsio
+cgif
 cjson
 cmake
 cmatrix
@@ -67,6 +73,7 @@ gh
 ghostscript
 giflib
 git
+gitty
 glib
 glib-networking
 glow
@@ -94,6 +101,7 @@ harfbuzz
 hdf5
 hicolor-icon-theme
 htop
+httpd
 httpie
 hugo
 hunspell
@@ -254,6 +262,7 @@ popt
 prettier
 protobuf
 py3cairo
+pygments
 pygobject3
 python@3.10
 python@3.8
@@ -290,6 +299,7 @@ tepl
 tesseract
 theora
 tidy-html5
+tig
 tldr
 tmux
 tokyo-cabinet
@@ -320,6 +330,7 @@ xxhash
 xz
 yarn
 youtube-dl
+yt-dlp
 zeromq
 zimg
 zola
