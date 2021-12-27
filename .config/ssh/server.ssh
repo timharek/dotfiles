@@ -1,16 +1,7 @@
-Host nuc
-  HostName ssh.adipid.com
-  Port 22
-  User tim
-
 Host wyd
   HostName wyd.no
   Port 22
   User tim
-
-Host datatukler
-  HostName git.datatukler.no
-  User root
 
 host bitbucket.org
   HostKeyAlgorithms=+ssh-rsa
