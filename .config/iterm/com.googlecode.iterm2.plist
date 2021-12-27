@@ -358,6 +358,8 @@
 	<string>F58662BB-3A7D-4690-9D3A-A8B187D60484</string>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -368,6 +370,8 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
