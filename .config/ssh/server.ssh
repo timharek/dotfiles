@@ -3,6 +3,11 @@ Host wyd
   Port 22
   User tim
 
+Host ravn
+  HostName ravn.adipid.com
+  Port 22
+  User tim
+
 host bitbucket.org
   HostKeyAlgorithms=+ssh-rsa
   PubkeyAcceptedKeyTypes=+ssh-rsa
