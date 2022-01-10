@@ -316,7 +316,7 @@
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>~/Pictures/Screenshots</string>
+				<string>~/Pictures/Skjermdump</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>

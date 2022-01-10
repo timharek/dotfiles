@@ -145,7 +145,7 @@
 				<string></string>
 				<key>scopes</key>
 				<array>
-					<string>~/notes</string>
+					<string>~/Notater</string>
 				</array>
 				<key>sortmode</key>
 				<integer>1</integer>
@@ -199,7 +199,7 @@
 			<key>config</key>
 			<dict>
 				<key>path</key>
-				<string></string>
+				<string>~/Notater</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.revealfile</string>
@@ -268,7 +268,7 @@
 				<string></string>
 				<key>scopes</key>
 				<array>
-					<string>~/notes</string>
+					<string>~/Notater</string>
 				</array>
 				<key>sortmode</key>
 				<integer>1</integer>
