@@ -32,3 +32,5 @@ qBittorrent
 .config/aws
 .bin/sbanken
 .config/sbanken
+.config/asciinema
+.config/rclone
