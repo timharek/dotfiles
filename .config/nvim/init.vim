@@ -53,6 +53,7 @@ Plug 'webdevel/tabulous'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -108,7 +109,6 @@ nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fs <cmd>lua require('telescope.builtin').grep_string()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').file_browser()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_references()<cr>
 nnoremap z= <cmd>lua require('telescope.builtin').spell_suggest()<cr>
@@ -161,6 +161,13 @@ require'lspconfig'.yamlls.setup {
 require'lspconfig'.denols.setup {
   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fb",
+  "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>",
+  {noremap = true}
+)
 EOF
 
 " }}}
