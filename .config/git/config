@@ -33,6 +33,7 @@
 [commit]
   gpgSign = true
   verbose = true
+	template = /Users/tim/.config/git/gitmessage
 [includeIf "gitdir:~/Netlife/"]
   path = ~/.config/git/config.netlife
 [includeIf "gitdir:~/repos/"]
