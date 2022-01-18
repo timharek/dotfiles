@@ -1,0 +1,46 @@
+#!/bin/bash
+
+workStart() {
+  open -a "Slack"
+  open -a "Google Chrome"
+  open -a "Harvest"
+}
+
+workEnd() {
+  osascript -e 'quit app "Slack"'
+  osascript -e 'quit app "Google Chrome"'
+  osascript -e 'quit app "Harvest"'
+}
+
+displayHelp() {
+  echo "Work"
+  echo 
+  echo "USAGE:"
+  echo "  work"
+  echo
+  echo "ARGUMENTS:"
+  echo "  -h, --help      Print Help (this message)"
+  echo "  -s              Launch all work applications"
+  echo "  -e              Quit all work applications"
+  echo
+  echo "DESCRIPTION:"
+  echo "  For being lazy, starting and quiting all work related applications."
+  echo
+
+  exit 0
+}
+
+
+while getopts 'se' flag; do
+  case "${flag}" in
+    s)  workStart
+      ;;
+    e)  workEnd
+      ;;
+    h | *)
+        displayHelp
+        exit 1
+      ;;
+  esac
+done
+
