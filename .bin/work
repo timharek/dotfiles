@@ -1,12 +1,14 @@
 #!/bin/bash
 
 workStart() {
+  echo "Launching all applications."
   open -a "Slack"
   open -a "Google Chrome" --args --profile-directory=Default
   open -a "Harvest"
 }
 
 workEnd() {
+  echo "Closing all applications."
   osascript -e 'quit app "Slack"'
   osascript -e 'quit app "Google Chrome"'
   osascript -e 'quit app "Harvest"'
@@ -19,19 +21,24 @@ displayHelp() {
   echo "  work"
   echo
   echo "ARGUMENTS:"
-  echo "  -h, --help      Print Help (this message)"
-  echo "  -s              Launch all work applications"
-  echo "  -e              Quit all work applications"
+  echo "  -h  Print Help (this message)"
+  echo "  -s  Launch all work applications"
+  echo "  -e  Quit all work applications"
   echo
   echo "DESCRIPTION:"
-  echo "  For being lazy, starting and quiting all work related applications."
+  echo "  For being lazy, launching and quiting all work related applications."
   echo
 
   exit 0
 }
 
 
-while getopts 'se' flag; do
+if [[ $# -eq 0 ]]; then
+    displayHelp
+    exit
+fi
+
+while getopts 'seh' flag; do
   case "${flag}" in
     s)  workStart
       ;;
