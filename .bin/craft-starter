@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "Enter project name"
+read PROJECT_NAME
+
+nvm use 16
+npm install
+composer install
+
+valet link $PROJECT_NAME
+valet secure $PROJECT_NAME
+
+echo "mysql/mariadb"
+mysql -u root -p -e "CREATE DATABASE $PROJECT_NAME CHARACTER SET UTF8mb4 COLLATE utf8mb4_danish_ci;" || exit
+
+cp .env.example .env
+sd "<name-of-project>" "$PROJECT_NAME" .env
+sd "db_user" "root" .env
+sd "db_password" "secret" .env
+
+open "https://$PROJECT_NAME.test/admin"
