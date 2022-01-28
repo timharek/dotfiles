@@ -77,7 +77,7 @@ usbWatcher:start()
 -- Layout setup
 hs.application.enableSpotlightForNameSearches(true)
 local u = hs.geometry.unitrect
-local laptopMonitor = "Color LCD"
+local laptopMonitor = "Built-in Retina Display"
 local homeMonitor = "ROG PG279Q"
 
 layoutLaptop = {
