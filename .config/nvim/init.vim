@@ -102,7 +102,7 @@ let g:prettier#quickfix_enabled = 0
 let g:user_emmet_leader_key = '<c-e>'
 let g:user_emmet_expandabbr_key = '<C-e>'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:prettier#autoformat_config_present = 1
+let g:prettier#config#prose_wrap = 'always'
 
 " Telescope
 nnoremap <c-p> <cmd>lua require('telescope.builtin').git_files()<cr>
