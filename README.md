@@ -7,7 +7,7 @@ My dotfiles, mainly for my macOS setup.
 - OS: macOS 11 Big Sur
 - Shell: [`zsh`](.config/zsh)
 - Terminal: [iterm2](.config/iterm)
-- Editor: [`nvim`](.config/nvim)
+- Editors: [`nvim`](.config/nvim) & [VSCodium](vscodium)
 - Browser: Firefox
 - Package manager: [Homebrew](https://brew.sh) (`brew`)
 
@@ -20,7 +20,7 @@ chmod +x macos
 ln -s ~/repos/dotfiles/.config ~/.config
 ln -s ~/repos/dotfiles/.bin ~/.bin
 ln -s ~/repos/dotfiles/.hammerspoon ~/.hammerspoon
-ln -s ~/repos/dotfiles/settings/VSCodium-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/repos/dotfiles/vscodium/settings.json ~/Library/Application\ Support/VSCodium/User/settings.json
 ```
 
 ## Usage
@@ -43,4 +43,14 @@ chmod +x install.sh update.sh
 
 ./install.sh # To install global npm packages
 ./update.sh # To update the list with global npm packages
+```
+
+### VSCodium
+
+```sh
+cd vscodium
+chmod +x install.sh update.sh
+
+./install.sh # To install extensions
+./update.sh # To update the list of extensions
 ```
