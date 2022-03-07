@@ -1,45 +1,41 @@
 {
-  "telemetry.enableTelemetry" : false,
-  "editor.lineNumbers" : "on",
-  "editor.wordSeparators" : "\/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.defaultFormatter" : "dbaeumer.vscode-eslint",
-  "editor.wordWrap" : "off",
-  "eslint.format.enable" : true,
-  "window.zoomLevel" : 1,
-  "[yaml]" : {
-    "editor.defaultFormatter" : "redhat.vscode-yaml"
+  "telemetry.enableTelemetry": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.wordWrap": "off",
+  "eslint.format.enable": true,
+  "window.zoomLevel": 1,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "redhat.telemetry.enabled" : false,
-  "editor.fontSize" : 14,
-  "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
-  "editor.formatOnSave" : true,
-  "editor.accessibilitySupport" : "off",
-  "formattingToggle.affects" : [
-    "formatOnPaste",
-    "formatOnSave",
-    "formatOnType"
-  ],
-  "workbench.startupEditor" : "newUntitledFile",
-  "typescript.updateImportsOnFileMove.enabled" : "always",
-  "vsicons.dontShowNewVersionMessage" : true,
-  "eslint.alwaysShowStatus" : true,
-  "markdown.preview.fontSize" : 18,
-  "editor.formatOnType" : true,
-  "git.confirmSync" : false,
-  "vetur.format.options.tabSize" : 4,
-  "workbench.iconTheme" : "vscode-icons",
-  "editor.suggestSelection" : "first",
-  "editor.fontLigatures" : true,
-  "files.associations" : {
-    "*.html" : "twig"
+  "redhat.telemetry.enabled": false,
+  "editor.fontSize": 14,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
+  "formattingToggle.affects": ["formatOnPaste", "formatOnSave", "formatOnType"],
+  "workbench.startupEditor": "newUntitledFile",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
+  "eslint.alwaysShowStatus": true,
+  "markdown.preview.fontSize": 18,
+  "editor.formatOnType": true,
+  "git.confirmSync": false,
+  "vetur.format.options.tabSize": 4,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.suggestSelection": "first",
+  "editor.fontLigatures": true,
+  "files.associations": {
+    "*.html": "twig"
   },
-  "workbench.colorTheme" : "One Dark Pro",
-  "editor.formatOnPaste" : true,
-  "editor.cursorStyle" : "line",
-  "update.mode" : "manual",
-  "emmet.includeLanguages" : {
-    "twig" : "html"
+  "editor.formatOnPaste": true,
+  "editor.cursorStyle": "line",
+  "update.mode": "manual",
+  "emmet.includeLanguages": {
+    "twig": "html"
   },
-  "editor.fontFamily" : "JetBrains Mono",
-  "python.languageServer" : "Microsoft"
+  "editor.fontFamily": "JetBrains Mono",
+  "python.languageServer": "Microsoft",
+  "workbench.colorTheme": "One Dark Pro"
 }
