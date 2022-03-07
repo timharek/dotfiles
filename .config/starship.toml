@@ -1,0 +1,11 @@
+add_newline = true
+
+[character]
+success_symbol = "[=>](bold green)" 
+
+[package]
+disabled = true
+
+[nodejs]
+format = "via [🤖 $version](bold green) "
+
