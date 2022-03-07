@@ -30,6 +30,10 @@
   cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|master\\|develop\\|production' | xargs -n 1 git branch -r -d"
 
   fuckit = reset --hard
+
+  r = rebase
+  rc = rebase --continue
+
 [commit]
   gpgSign = true
   verbose = true
