@@ -47,4 +47,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     
     # Apps
     alias imgopt="open -a ImageOptim ."
+
+    # etc
+    alias dnsflush="sudo killall -HUP mDNSResponder"
 fi
