@@ -34,3 +34,4 @@ qBittorrent
 .config/sbanken
 .config/asciinema
 .config/rclone
+.config/mmctl
