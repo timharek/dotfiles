@@ -5,7 +5,6 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.wordWrap": "off",
   "eslint.format.enable": true,
-  "window.zoomLevel": 1,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
@@ -37,5 +36,11 @@
   },
   "editor.fontFamily": "JetBrains Mono",
   "python.languageServer": "Microsoft",
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "window.zoomLevel": 1
 }
