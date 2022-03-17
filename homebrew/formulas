@@ -1,7 +1,5 @@
 adns
 adwaita-icon-theme
-aerc
-amfora
 amtk
 ansible
 aom
@@ -14,6 +12,7 @@ aspell
 assimp
 atk
 autoconf
+awscli
 bash
 bash-completion
 bat
@@ -54,6 +53,7 @@ enchant
 exa
 fd
 ffmpeg
+ffmpeg@4
 fftw
 figlet
 fileicon
@@ -103,7 +103,6 @@ hicolor-icon-theme
 htop
 httpd
 httpie
-hugo
 hunspell
 hwloc
 icu4c
@@ -113,6 +112,7 @@ imapsync
 imath
 isl
 iso-codes
+isync
 jansson
 jasper
 jbig2dec
@@ -129,6 +129,7 @@ leptonica
 libarchive
 libass
 libassuan
+libavif
 libb2
 libbluray
 libcbor
@@ -151,6 +152,7 @@ libimagequant
 libksba
 liblqr
 libmatio
+libmng
 libmpc
 libnghttp2
 libogg
@@ -209,6 +211,7 @@ mbedtls
 md4c
 mecab
 mecab-ipadic
+mmctl
 mozjpeg
 mpdecimal
 mpfr
@@ -232,7 +235,6 @@ nss
 nvm
 oniguruma
 open-mpi
-openconnect
 opencore-amr
 openexr
 openjdk
@@ -278,6 +280,7 @@ rtmpdump
 rubberband
 ruby
 screenresolution
+sd
 sdl2
 shared-mime-info
 six
@@ -328,6 +331,7 @@ xorgproto
 xvid
 xxhash
 xz
+yabai
 yarn
 youtube-dl
 yt-dlp
