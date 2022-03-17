@@ -1,49 +1,60 @@
 #!/usr/bin/env sh
 
+# Initialize yabai
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
-
-# global settings
+# Follow mouse
 yabai -m config mouse_follows_focus          on
-yabai -m config focus_follows_mouse          autoraise
+yabai -m config focus_follows_mouse          autofocus
+
+# Window
+## New window spawn on the left side
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               off
 yabai -m config window_shadow                on
-yabai -m config window_opacity               off
-yabai -m config window_opacity_duration      0.0
-yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        0.90
-#yabai -m config window_border                on
-#yabai -m config window_border_width          2
-#yabai -m config active_window_border_color   0xff00a2fd
-#yabai -m config normal_window_border_color   0xff212121
+
+## Border (currently disabled)
+yabai -m config window_border                off
+yabai -m config window_border_width          2
+yabai -m config active_window_border_color   0xff002d47
+yabai -m config normal_window_border_color   0xff212121
 yabai -m config insert_feedback_color        0xffd75f5f
+
+## Split the amount of the previous window
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
+
+## Mouse actions
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
-yabai -m config mouse_drop_action            swap
 
-# general space settings
+# Space settings
 yabai -m config layout                       bsp
+
+## Paddings
+yabai -m config top_padding                  20
+yabai -m config bottom_padding               20
+yabai -m config left_padding                 20
+yabai -m config right_padding                20
 yabai -m config window_gap                   20
 
+## Space labels
 yabai -m space 1 --label web
-yabai -m space 2 --label mail
+yabai -m space 3 --label mail
 
-# window rules
-yabai -m rule --add app="^Firefox$" space=web
-yabai -m rule --add app="^Mail$" space=mail
+# Window rules
+yabai -m rule --add app="^Firefox$"             space=web
+yabai -m rule --add app="^Chrome$"              space=work
+yabai -m rule --add app="^Mail$"                space=mail
 
-yabai -m rule --add app="^Systemvalg$" manage=off 
-yabai -m rule --add app="^Pika$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Alfred Preferences$" manage=off 
-yabai -m rule --add app="^Mullvad VPN$" manage=off border=off
-yabai -m rule --add app="^Installerer$" manage=off sticky=on
-yabai -m rule --add app="^zoom.us$" manage=off
-yabai -m rule --add app="^TeamViewer$" manage=off
-yabai -m rule --add app="^Numi$" manage=off sticky=on
+yabai -m rule --add app="^Systemvalg$"          manage=off 
+yabai -m rule --add app="^Pika$"                manage=off sticky=on layer=above 
+yabai -m rule --add app="^Alfred Preferences$"  manage=off 
+yabai -m rule --add app="^Mullvad VPN$"         manage=off border=off
+yabai -m rule --add app="^Installerer$"         manage=off sticky=on
+yabai -m rule --add app="^TeamViewer$"          manage=off
+yabai -m rule --add app="^Numi$"                manage=off sticky=on
 
 echo "yabai configuration loaded.."
