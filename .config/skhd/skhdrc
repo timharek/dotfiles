@@ -24,10 +24,6 @@ shift + alt - r : yabai -m space --rotate 90
 ## Toggle fullscreen
 alt + cmd - return : yabai -m window --toggle zoom-fullscreen
 
-## Space control
-alt + cmd - right : yabai -m space --focus next
-alt + cmd - left : yabai -m space --focus prev
-
 ## Moving windows to spaces
 cmd + ctrl - 1 : yabai -m window --space 1
 cmd + ctrl - 2 : yabai -m window --space 2
