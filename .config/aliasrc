@@ -16,9 +16,9 @@ alias dl="cd $DL"
 
 # Repos specific
 alias th="cd $REPOS/timharek.no"
-alias vk="cd $REPOS/vk/vestkontakt.no"
+alias vk="cd $REPOS/_vk/vestkontakt.no"
 alias netlife="cd ~/Netlife"
-alias fribyte="cd $REPOS/fribyte"
+alias fribyte="cd $REPOS/_fribyte"
 
 # Binary commands
 alias speedtest="speedtest-cli"
