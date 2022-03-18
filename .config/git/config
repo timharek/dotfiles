@@ -38,10 +38,10 @@
   gpgSign = true
   verbose = true
 	template = /Users/tim/.config/git/gitmessage
+[includeIf "gitdir:~/"]
+  path = ~/.config/git/config.personal
 [includeIf "gitdir:~/Netlife/"]
   path = ~/.config/git/config.netlife
-[includeIf "gitdir:~/repos/"]
-  path = ~/.config/git/config.personal
 [rebase]
 	autoStash = true
 [merge]
