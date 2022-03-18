@@ -30,9 +30,6 @@ yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 
-# Space settings
-yabai -m config layout                       bsp
-
 ## Paddings
 yabai -m config top_padding                  20
 yabai -m config bottom_padding               20
@@ -42,7 +39,14 @@ yabai -m config window_gap                   20
 
 ## Space labels
 yabai -m space 1 --label web
+yabai -m space 2 --label work
 yabai -m space 3 --label mail
+yabai -m space 4 --label comms
+yabai -m space 5 --label terminal
+
+# Space settings
+yabai -m config layout                       bsp
+yabai -m config --space comms layout         float
 
 # Window rules
 yabai -m rule --add app="^Firefox$"             space=web
@@ -56,5 +60,6 @@ yabai -m rule --add app="^Mullvad VPN$"         manage=off border=off
 yabai -m rule --add app="^Installerer$"         manage=off sticky=on
 yabai -m rule --add app="^TeamViewer$"          manage=off
 yabai -m rule --add app="^Numi$"                manage=off sticky=on
+yabai -m rule --add app="^Harvest$"             manage=off
 
 echo "yabai configuration loaded.."
