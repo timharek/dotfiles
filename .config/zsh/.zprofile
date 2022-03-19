@@ -51,3 +51,7 @@ alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 # AWS
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials 
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
+
+# Deno
+export PATH="/Users/tim/.deno/bin:$PATH"
+
