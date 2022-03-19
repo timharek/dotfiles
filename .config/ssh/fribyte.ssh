@@ -1,5 +1,5 @@
 Host andeby
-  HostName andeby.ss.uib.no
+  HostName andeby.fribyte.no
   Port 22
   User root
 
