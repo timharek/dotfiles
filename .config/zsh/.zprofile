@@ -53,5 +53,7 @@ export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 
 # Deno
-export PATH="/Users/tim/.deno/bin:$PATH"
+export DENO_INSTALL_ROOT="$XDG_CONFIG_HOME/deno"
+export DENO_DIR="$XDG_CACHE_HOME/deno"
+export PATH="$XDG_CONFIG_HOME/deno/bin:$PATH"
 
