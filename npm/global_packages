@@ -1,7 +1,6 @@
 @aws-amplify
 @sanity
 @tailwindcss
-aws-amplify
 depcheck
 npm
 pyright
@@ -9,3 +8,4 @@ sanity
 serve
 tailwindcss
 vscode-langservers-extracted
+wipeclean
