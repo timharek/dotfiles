@@ -74,6 +74,7 @@ ghostscript
 giflib
 git
 gitty
+glab
 glib
 glib-networking
 glow
@@ -126,6 +127,7 @@ lame
 ldns
 ledger
 leptonica
+libaec
 libarchive
 libass
 libassuan
@@ -223,7 +225,6 @@ neofetch
 neovim
 netpbm
 nettle
-newsboat
 nghttp2
 nginx
 nmap
@@ -279,6 +280,7 @@ rsync
 rtmpdump
 rubberband
 ruby
+scdoc
 screenresolution
 sd
 sdl2
