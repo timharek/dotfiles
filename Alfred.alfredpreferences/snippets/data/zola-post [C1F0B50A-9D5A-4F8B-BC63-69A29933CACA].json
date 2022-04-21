@@ -3,6 +3,6 @@
     "snippet" : "+++\ndate = {date:yyyy-MM-dd}\ntitle = \"\"\n+++",
     "uid" : "C1F0B50A-9D5A-4F8B-BC63-69A29933CACA",
     "name" : "zola-post",
-    "keyword" : ""
+    "keyword" : "zola-date"
   }
 }

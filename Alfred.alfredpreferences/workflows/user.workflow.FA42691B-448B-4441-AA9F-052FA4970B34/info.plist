@@ -47,45 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B811FFAB-E430-45A9-9D1B-59B1E75763B4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2F165A33-99FA-4BE2-B6E6-BCB5BF3DC076</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>DD9B904B-27E5-4346-B722-5821476E3AFB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>48D1AA07-6578-4C30-9091-ABF6EB7F6E9F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>ECC3AEED-35FB-4107-81F0-706B241AF839</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EF1D1D0F-F473-4942-89CE-943ACA477F68</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -146,44 +107,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>\begin{aligned}
-
-\end{aligned}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>48D1AA07-6578-4C30-9091-ABF6EB7F6E9F</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>bend</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>DD9B904B-27E5-4346-B722-5821476E3AFB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -216,78 +139,6 @@
 			<string>59C58355-582E-4B62-A58E-4B0595AA7751</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>40043672</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>2F165A33-99FA-4BE2-B6E6-BCB5BF3DC076</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>mob</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>B811FFAB-E430-45A9-9D1B-59B1E75763B4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>dob</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>ECC3AEED-35FB-4107-81F0-706B241AF839</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>291196</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>EF1D1D0F-F473-4942-89CE-943ACA477F68</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -344,33 +195,19 @@
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
-		<key>2F165A33-99FA-4BE2-B6E6-BCB5BF3DC076</key>
-		<dict>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>485</integer>
-		</dict>
-		<key>48D1AA07-6578-4C30-9091-ABF6EB7F6E9F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>200</integer>
-		</dict>
 		<key>59C58355-582E-4B62-A58E-4B0595AA7751</key>
 		<dict>
 			<key>xpos</key>
 			<integer>170</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>195</integer>
 		</dict>
 		<key>5FED4951-3C35-4250-BE25-616FF1AA3A54</key>
 		<dict>
 			<key>xpos</key>
 			<integer>385</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>195</integer>
 		</dict>
 		<key>6EF1DFD6-32E3-4BE7-8CE1-9C08BD57368E</key>
 		<dict>
@@ -385,34 +222,6 @@
 			<integer>385</integer>
 			<key>ypos</key>
 			<integer>50</integer>
-		</dict>
-		<key>B811FFAB-E430-45A9-9D1B-59B1E75763B4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>170</integer>
-			<key>ypos</key>
-			<integer>485</integer>
-		</dict>
-		<key>DD9B904B-27E5-4346-B722-5821476E3AFB</key>
-		<dict>
-			<key>xpos</key>
-			<integer>170</integer>
-			<key>ypos</key>
-			<integer>200</integer>
-		</dict>
-		<key>ECC3AEED-35FB-4107-81F0-706B241AF839</key>
-		<dict>
-			<key>xpos</key>
-			<integer>170</integer>
-			<key>ypos</key>
-			<integer>615</integer>
-		</dict>
-		<key>EF1D1D0F-F473-4942-89CE-943ACA477F68</key>
-		<dict>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>615</integer>
 		</dict>
 	</dict>
 	<key>version</key>
