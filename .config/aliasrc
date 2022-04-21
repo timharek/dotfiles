@@ -38,6 +38,7 @@ alias tp="tmux new -s $(basename $(pwd))"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
+alias norid="whois -p 79 -h finger.norid.no"
 
 # macOS specific
 if [[ "$(uname)" == "Darwin" ]]; then
