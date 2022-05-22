@@ -42,5 +42,10 @@
   },
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "editor.multiCursorModifier": "ctrlCmd"
 }
