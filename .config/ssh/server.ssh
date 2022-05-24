@@ -4,7 +4,7 @@ Host wyd
   User tim
 
 Host soft
-  HostName wyd.no
+  HostName git.wyd.no
   Port 23231
   User tim
 
