@@ -1,6 +1,6 @@
 {
   "telemetry.enableTelemetry": false,
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.wordWrap": "off",
@@ -51,5 +51,5 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.proseWrap": "always"
+  "prettier.proseWrap": "always",
 }
