@@ -35,6 +35,7 @@ cmocka
 composer
 coreutils
 curl
+dagger
 dante
 dateutils
 dav1d
@@ -63,6 +64,7 @@ freetds
 freetype
 frei0r
 fribidi
+fx
 fzf
 gcc
 gd
@@ -166,6 +168,7 @@ libpq
 libproxy
 libpsl
 libpthread-stubs
+libraw
 librist
 librsvg
 libsamplerate
@@ -256,6 +259,7 @@ pcre2
 perl
 php
 php@7.4
+php@8.0
 pinentry
 pinentry-mac
 pixman
@@ -286,9 +290,11 @@ sd
 sdl2
 shared-mime-info
 six
+skate
 skhd
 sl
 snappy
+soft-serve
 speedtest-cli
 speex
 sqlite
@@ -310,6 +316,7 @@ tmux
 tokyo-cabinet
 tree
 tree-sitter
+typioca
 uchardet
 unbound
 unibilium
@@ -325,6 +332,7 @@ w3m
 webp
 wget
 wimlib
+wishlist
 x264
 x265
 xapian

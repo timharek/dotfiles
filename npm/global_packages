@@ -1,7 +1,9 @@
 @aws-amplify
 @sanity
+@solid
 @tailwindcss
 depcheck
+ghost-cli
 npm
 pyright
 sanity

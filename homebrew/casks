@@ -1,8 +1,10 @@
 1password
+1password-cli
 alfred
 alt-tab
 appcleaner
 balenaetcher
+bike
 bitwarden
 blackhole-2ch
 chromedriver
@@ -16,6 +18,7 @@ exifcleaner
 exodus
 figma
 firefox
+freetube
 fuse
 google-chrome
 gpg-suite
@@ -27,6 +30,7 @@ iterm2
 kap
 keepassxc
 keka
+kitty
 libreoffice
 lulu
 macfuse
@@ -45,6 +49,7 @@ osxfuse
 pdf-squeezer
 pika
 rectangle
+reminders-menubar
 sequel-ace
 signal
 sketch
