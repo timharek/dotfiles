@@ -29,6 +29,7 @@ let mapleader=" "
 nnoremap <leader>ct :r!date "+\%F"<cr>
 nnoremap <leader>pv :Ex<CR>
 nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>o :tabo<CR>
 
 map gf :tabe <cfile><cr>
 
