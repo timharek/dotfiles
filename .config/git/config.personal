@@ -1,6 +1,6 @@
 [user]
 	name = Tim Hårek Andreassen
-	email = tim@harek.dev
+	email = tim@harek.no
 	signingkey = 34853DFD0B419A0D
 [sendemail]
   smtpEncryption = tls
