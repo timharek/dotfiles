@@ -17,11 +17,8 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-# Install useful binaries
-cat formulas | xargs -n 1 brew install
-
-# Install useful apps
-cat casks | xargs -n 1 brew install --cask
+# Install all homebrew formulas and casks
+brew bundle
 
 # Remove outdated versions from the cellar.
 brew cleanup

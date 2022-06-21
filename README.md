@@ -27,6 +27,8 @@ ln -s ~/repos/dotfiles/vscodium/settings.json ~/Library/Application\ Support/VSC
 
 ### Homebrew
 
+`Brewfile` is located in `.config/brew`.
+
 ```sh
 cd homebrew
 chmod +x install.sh update.sh

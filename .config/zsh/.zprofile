@@ -57,3 +57,6 @@ export DENO_INSTALL_ROOT="$XDG_CONFIG_HOME/deno"
 export DENO_DIR="$XDG_CACHE_HOME/deno"
 export PATH="$XDG_CONFIG_HOME/deno/bin:$PATH"
 
+# Homebrew 
+export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
+eval "$(brew shellenv)"
