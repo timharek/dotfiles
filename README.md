@@ -27,14 +27,17 @@ ln -s ~/repos/dotfiles/vscodium/settings.json ~/Library/Application\ Support/VSC
 
 ### Homebrew
 
-`Brewfile` is located in `.config/brew`.
+`Brewfile` is located in `.config/brew` using `HOMEBREW_BUNDLE_FILE`.
 
 ```sh
-cd homebrew
-chmod +x install.sh update.sh
+# Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-./install.sh # To install brew formulas and casks
-./update.sh # To update the lists `formulas` and `casks`
+# Install homebrew and mas formulas and casks
+brew bundle
+
+# Update homebrew and mas formulas and casks
+brew bundle dump -f
 ```
 
 ### NPM
