@@ -15,7 +15,10 @@ set background=dark
 set termguicolors
 set nocompatible
 set updatetime=50
+set list
+set listchars=tab:▸\ ,trail:·
 set scrolloff=8
+set sidescrolloff=8
 set signcolumn=yes
 set colorcolumn=80
 filetype plugin on
