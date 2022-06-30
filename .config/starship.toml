@@ -9,3 +9,8 @@ disabled = true
 [nodejs]
 format = "via [🤖 $version](bold green) "
 
+[git_commit]
+only_detached = false
+commit_hash_length = 7
+tag_disabled = false
+
