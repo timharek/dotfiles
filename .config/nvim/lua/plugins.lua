@@ -9,7 +9,8 @@ Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 Plug 'ap/vim-css-color'
 Plug 'prettier/vim-prettier'
-Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'navarasu/onedark.nvim'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
@@ -34,7 +35,6 @@ vim.call('plug#end')
 -- Plugin settings
 vim.g["user_emmet_leader_key"] = '<c-e>'
 vim.g["user_emmet_expandabbr_key"] = '<c-e>'
-vim.g["airline#extension#tabline#formatter"] = 'unique_tail'
 
 -- Prettier
 vim.g["prettier#quickfix_enabled"] = 0
