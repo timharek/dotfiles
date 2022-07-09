@@ -26,8 +26,8 @@
 
   rem = remote -v
 
-  cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|production' | xargs -n 1 git branch -d"
-  cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|master\\|develop\\|production' | xargs -n 1 git branch -r -d"
+  cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|staging\\|production' | xargs -n 1 git branch -d"
+  cleanupb = "!git branch -r --merged | grep  -v '\\*\\|main\\|master\\|develop\\|staging\\|production' | xargs -n 1 git branch -r -d"
 
   fuckit = reset --hard
 
