@@ -4,12 +4,14 @@ My dotfiles, mainly for my macOS setup.
 
 ## What I use
 
-- OS: macOS 11 Big Sur
+- OS: macOS 12 Monterey
 - Shell: [`zsh`](.config/zsh)
 - Terminal: [iterm2](.config/iterm)
 - Editors: [`nvim`](.config/nvim) & [VSCodium](vscodium)
+- Window manager: [`yabai`](.config/yabai)
 - Browser: Firefox
-- Package manager: [Homebrew](https://brew.sh) (`brew`)
+- Package manager: [Homebrew](https://brew.sh)
+- [Keyboard shortcuts](KEYBOARD.md)
 
 ## Setup
 
