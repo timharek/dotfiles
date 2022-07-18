@@ -4,6 +4,7 @@
 @tailwindcss
 depcheck
 ghost-cli
+gscan
 npm
 pyright
 sanity
