@@ -2,7 +2,7 @@
   "telemetry.enableTelemetry": false,
   "editor.lineNumbers": "relative",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wordWrap": "off",
   "eslint.format.enable": true,
   "[yaml]": {
