@@ -107,21 +107,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Downloads</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>5FED4951-3C35-4250-BE25-616FF1AA3A54</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -139,6 +124,36 @@
 			<string>59C58355-582E-4B62-A58E-4B0595AA7751</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Downloads</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5FED4951-3C35-4250-BE25-616FF1AA3A54</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Pictures/Skjermdump</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>035E5CF7-8340-497C-A771-D3651785B824</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -161,21 +176,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>~/Pictures/Skjermdump</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>035E5CF7-8340-497C-A771-D3651785B824</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -184,46 +184,48 @@
 		<key>035E5CF7-8340-497C-A771-D3651785B824</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>755</integer>
+			<real>755</real>
 		</dict>
 		<key>2C2FF05B-20E5-4527-AF94-140566041D10</key>
 		<dict>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 		<key>59C58355-582E-4B62-A58E-4B0595AA7751</key>
 		<dict>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>195</integer>
+			<real>195</real>
 		</dict>
 		<key>5FED4951-3C35-4250-BE25-616FF1AA3A54</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>195</integer>
+			<real>195</real>
 		</dict>
 		<key>6EF1DFD6-32E3-4BE7-8CE1-9C08BD57368E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>170</integer>
+			<real>170</real>
 			<key>ypos</key>
-			<integer>755</integer>
+			<real>755</real>
 		</dict>
 		<key>86FC8BE7-1360-47FC-8688-7BF0A03D16D0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
