@@ -1,5 +1,5 @@
 NPM_PACKAGES_FILE_NAME = npm_packages.txt
-VSCODIUM_EXTENTIONS_FILE_NAME = vscodium_extentions.txt
+VSCODIUM_EXTENTIONS_FILE_NAME = vscodium/vscodium_extentions.txt
 
 setup: ## Setup fresh install of macOS
 	sudo -v
