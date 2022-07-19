@@ -14,8 +14,8 @@ These are my keyboard shortcuts.
 
 ## Yabai
 
-- Moving windows to spaces: <kbd>CMD</kbd> + <kbd>Ctrl</kbd> + <kbd><space-no></kbd>
-- Switching to a space: <kbd>CMD</kbd> + <kbd>Alt</kbd> + <kbd><space-no></kbd>
+- Moving windows to spaces: <kbd>CMD</kbd> + <kbd>Ctrl</kbd> + <kbd>2</kbd> (swap 2 with any other number)
+- Switching to a space: <kbd>Fn</kbd> <kbd>2</kbd> (swap 2 with any other number)
 
 - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>: Rotate windows 90 degrees
 - <kbd>CMD</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd>: Full screen active window

@@ -35,16 +35,16 @@ cmd + ctrl - 7 : yabai -m window --space 7
 cmd + ctrl - 8 : yabai -m window --space 8
 cmd + ctrl - 9 : yabai -m window --space 9
 
-# Move space/desktop
-cmd + alt - 1 : yabai -m space --focus 1 
-cmd + alt - 2 : yabai -m space --focus 2 
-cmd + alt - 3 : yabai -m space --focus 3 
-cmd + alt - 4 : yabai -m space --focus 4 
-cmd + alt - 5 : yabai -m space --focus 5 
-cmd + alt - 6 : yabai -m space --focus 6 
-cmd + alt - 7 : yabai -m space --focus 7 
-cmd + alt - 8 : yabai -m space --focus 8 
-cmd + alt - 9 : yabai -m space --focus 9 
+# Switch space/desktop
+fn - 1 : yabai -m space --focus 1 
+fn - 2 : yabai -m space --focus 2 
+fn - 3 : yabai -m space --focus 3 
+fn - 4 : yabai -m space --focus 4 
+fn - 5 : yabai -m space --focus 5 
+fn - 6 : yabai -m space --focus 6 
+fn - 7 : yabai -m space --focus 7 
+fn - 8 : yabai -m space --focus 8 
+fn - 9 : yabai -m space --focus 9 
 
 ## Toggle floating window
 shift + cmd - space : yabai -m window --toggle float
