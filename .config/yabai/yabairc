@@ -46,7 +46,6 @@ yabai -m space 5 --label terminal
 
 # Space settings
 yabai -m config layout                       bsp
-yabai -m config --space comms layout         float
 
 # Window rules
 yabai -m rule --add app="^Firefox$"             space=web
