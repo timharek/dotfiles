@@ -215,6 +215,7 @@ brew "liblqr"
 brew "libomp"
 brew "imagemagick"
 brew "imapsync"
+brew "irssi"
 brew "isync"
 brew "jq"
 brew "json-c"
@@ -288,6 +289,7 @@ brew "tcl-tk"
 brew "python@3.8"
 brew "qt"
 brew "qt@5"
+brew "restic"
 brew "ripgrep"
 brew "xxhash"
 brew "rsync"
@@ -404,6 +406,7 @@ mas "Affinity Photo", id: 824183456
 mas "Black Out", id: 1319884285
 mas "Dato", id: 1470584107
 mas "Diagrams", id: 1276248849
+mas "Final Cut Pro", id: 424389933
 mas "Harvest", id: 506189836
 mas "HEIC Converter", id: 1294126402
 mas "Home Inventory", id: 413564952
