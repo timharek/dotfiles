@@ -16,19 +16,20 @@ brew: ## Install Homebrew and Brewfile formulaes and casks
 	brew bundle
 
 brew-dump: ## Update Homebrew formulaes and casks dump
-	brew bundle dump -f
+	@brew bundle dump -f
 
 npm: ## Install dump-file for globally installed NPM packages
 	sed -e 's/.*@//g' ${NPM_PACKAGES_FILE_NAME} | xargs -n 1 npm install -g
 
 npm-dump: ## Update dump-file for globally installed NPM packages
-	ls -1 `npm root -g` > ${NPM_PACKAGES_FILE_NAME}
+	@ls -1 `npm root -g`
+	@ls -1 `npm root -g` > ${NPM_PACKAGES_FILE_NAME}
 
 code: ## Install VSCodium / VS Code extensions from dump-file
-	cat ${VSCODIUM_EXTENTIONS_FILE_NAME} | xargs -n 1 codium --install-extension
+	@cat ${VSCODIUM_EXTENTIONS_FILE_NAME} | xargs -n 1 codium --install-extension
 
 code-dump: ## Update dump-file for extensions for VSCodium / VS Code
-	codium --list-extensions > ${VSCODIUM_EXTENTIONS_FILE_NAME}
+	@codium --list-extensions > ${VSCODIUM_EXTENTIONS_FILE_NAME}
 
 help: ## Show this help
 	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
