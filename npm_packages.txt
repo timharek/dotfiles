@@ -1,4 +1,4 @@
-@aws-amplify
+@hubspot
 @sanity
 @solid
 @tailwindcss
@@ -8,7 +8,6 @@ gscan
 npm
 pyright
 sanity
-serve
 tailwindcss
 vscode-langservers-extracted
 wipeclean
