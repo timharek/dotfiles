@@ -15,7 +15,7 @@ alias notes="cd ~/notes"
 alias dl="cd $DL"
 
 # Repos specific
-alias th="cd $REPOS/timharek.no"
+alias th="cd $REPOS/_personal/timharek.no"
 alias vk="cd $REPOS/_vk/vestkontakt.no"
 alias netlife="cd ~/Netlife"
 alias fribyte="cd $REPOS/_fribyte"
