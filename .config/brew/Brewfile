@@ -78,6 +78,7 @@ brew "c-ares"
 brew "libuv"
 brew "node"
 brew "bitwarden-cli"
+brew "lz4"
 brew "zstd"
 brew "boost"
 brew "calcurse"
@@ -99,7 +100,6 @@ brew "cask"
 brew "cfitsio"
 brew "cmake"
 brew "cmatrix"
-brew "lz4"
 brew "rtmpdump"
 brew "gd"
 brew "libsodium"
@@ -357,14 +357,12 @@ cask "google-chrome"
 cask "gpg-suite"
 cask "gulp"
 cask "hammerspoon"
-cask "iglance"
 cask "imageoptim"
 cask "insomnia"
 cask "iterm2"
 cask "kap"
 cask "keepassxc"
 cask "keka"
-cask "latest"
 cask "libreoffice"
 cask "lulu"
 cask "macfuse"
@@ -395,7 +393,6 @@ cask "steam"
 cask "sweet-home3d"
 cask "teamviewer"
 cask "thunderbird"
-cask "utm"
 cask "veracrypt"
 cask "visual-studio-code"
 cask "vlc"
@@ -404,7 +401,6 @@ mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Black Out", id: 1319884285
 mas "Dato", id: 1470584107
-mas "Diagrams", id: 1276248849
 mas "Final Cut Pro", id: 424389933
 mas "HEIC Converter", id: 1294126402
 mas "Home Inventory", id: 413564952
@@ -413,5 +409,6 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PDF Expert", id: 1055273043
 mas "Privacy Redirect", id: 1578144015
+mas "Velja", id: 1607635845
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
