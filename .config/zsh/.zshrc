@@ -25,6 +25,7 @@ export EDITOR=nvim
 
 source ~/.config/aliasrc
 source ~/.config/functionrc
+source $XDG_CONFIG_HOME/zsh/.secret
 
 bindkey -v
 
