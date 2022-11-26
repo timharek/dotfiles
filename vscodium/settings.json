@@ -2,7 +2,6 @@
   "telemetry.enableTelemetry": false,
   "editor.lineNumbers": "relative",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.wordWrap": "off",
   "eslint.format.enable": true,
   "[yaml]": {
@@ -42,7 +41,6 @@
   },
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "window.zoomLevel": 1,
   "svelte.enable-ts-plugin": true,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
@@ -53,4 +51,7 @@
   },
   "prettier.proseWrap": "always",
   "auto-build.defaultEnv.name": "STM32F103RE_creality",
+  "window.zoomLevel": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2
 }
