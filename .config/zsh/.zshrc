@@ -16,7 +16,7 @@ fi
 # ZSH
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions fzf-zsh-plugin)
 source $ZSH/oh-my-zsh.sh
 
 unset MAILCHECK
