@@ -2,6 +2,8 @@ CONFIG="~/.config"
 REPOS="~/repos"
 export DL="~/Downloads"
 
+alias code="codium"
+
 # Config files
 alias edit="$EDITOR ~/.config/zsh/.zshrc"
 alias aedit="$EDITOR ~/.config/aliasrc"
