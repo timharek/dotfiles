@@ -4,7 +4,7 @@ My dotfiles, mainly for my macOS setup.
 
 ## What I use
 
-- OS: macOS 12 Monterey
+- OS: macOS 12 Ventura
 - Shell: [`zsh`](.config/zsh)
 - Terminal: [iterm2](.config/iterm)
 - Editors: [`nvim`](.config/nvim) & [VSCodium](vscodium)
