@@ -19,6 +19,9 @@ Plug 'evidens/vim-twig'
 Plug 'webdevel/tabulous'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = vim.fn['TSUpdate']})
 
+Plug 'numToStr/Comment.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
@@ -41,7 +44,7 @@ vim.g["prettier#quickfix_enabled"] = 0
 vim.g["prettier#config#prose_wrap"] = 'always'
 
 -- LSP
-local cmp = require'cmp'
+local cmp = require 'cmp'
 
 cmp.setup({
   snippet = {
@@ -66,35 +69,36 @@ cmp.setup({
   }
 })
 
-require'lspconfig'.pyright.setup {
+require('lspconfig').pyright.setup {
   capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
-require'lspconfig'.tailwindcss.setup {
+require('lspconfig').tailwindcss.setup {
   capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
 
-require'lspconfig'.yamlls.setup {
+require('lspconfig').yamlls.setup {
   capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
-require'lspconfig'.denols.setup {
-  capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+require('lspconfig').denols.setup {
+  capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
 }
+
 
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
-require'lspconfig'.html.setup {
+require('lspconfig').html.setup {
   capabilities = capabilities,
 }
 
-require'lspconfig'.cssls.setup {
+require('lspconfig').cssls.setup {
   capabilities = capabilities,
 }
 
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   -- A list of parser names, or "all"
   ensure_installed = { "go", "html", "css", "javascript", "typescript" },
 
@@ -109,3 +113,14 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+require('Comment').setup()
+
+require('gitsigns').setup {
+  signs = {
+    add = { text = '+' },
+    change = { text = '~' },
+    delete = { text = '_' },
+    topdelete = { text = '‾' },
+    changedelete = { text = '~' },
+  },
+}
