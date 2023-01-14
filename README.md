@@ -7,7 +7,7 @@ My dotfiles, mainly for my macOS setup.
 - OS: macOS 12 Ventura
 - Shell: [`zsh`](.config/zsh)
 - Terminal: [iterm2](.config/iterm)
-- Editors: [`nvim`](.config/nvim) & [VSCodium](vscodium)
+- Editors: [`nvim`](.config/nvim), [Helix](.config/helix) & [VSCodium](vscodium)
 - Window manager: [`yabai`](.config/yabai)
 - Browser: Firefox
 - Package manager: [Homebrew](https://brew.sh)
