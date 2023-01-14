@@ -1,0 +1,9 @@
+[[language]]
+name = "markdown"
+file-types = ["md"]
+formatter = { command = "prettierd", args = ["*.md"]}
+auto-format = true
+
+[[language]]
+name = "html"
+auto-format = false
