@@ -10,10 +10,12 @@ alias aedit="$EDITOR ~/.config/aliasrc"
 alias fedit="$EDITOR ~/.config/functionrc"
 alias vedit="$EDITOR ~/.config/nvim/init.lua"
 alias gedit="$EDITOR ~/.config/git/config"
+alias hedit="$EDITOR ~/.config/helix"
 
 # Navigation
 alias repos="cd $REPOS"
 alias notes="cd ~/notes"
+alias dots="cd $REPOS/dotfiles"
 alias dl="cd $DL"
 
 # Repos specific
