@@ -8,6 +8,7 @@ auto-format = true
 name = "html"
 auto-format = false
 
+# Source : https://github.com/Rishabh672003/dotfiles/blob/47665bba4acd37a1fb3c1030d8c76b0ed9f07514/.config/helix/languages.toml
 [[language]]
 name = "javascript"
 shebangs = ["deno", "node"]
