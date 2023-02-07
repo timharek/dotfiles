@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.config/git/ignore
-	editor = nvim
+	editor = hx
 [init]
 	defaultBranch = main
 [alias]
