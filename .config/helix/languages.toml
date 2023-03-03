@@ -1,7 +1,10 @@
 [[language]]
 name = "markdown"
-file-types = ["md"]
+scope = "source.md"
+injection-regex = "md|markdown"
+file-types = ["md", "markdown", "PULLREQ_EDITMSG"]
 formatter = { command = "prettierd", args = ["*.md"] }
+language-server = { command = "marksman", args=["server"] }
 auto-format = true
 
 [[language]]
