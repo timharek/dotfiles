@@ -14,3 +14,6 @@ only_detached = false
 commit_hash_length = 7
 tag_disabled = false
 
+[gcloud]
+format = ''
+
