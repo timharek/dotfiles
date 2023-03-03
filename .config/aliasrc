@@ -14,7 +14,7 @@ alias hedit="$EDITOR ~/.config/helix"
 
 # Navigation
 alias repos="cd $REPOS"
-alias notes="cd ~/notes"
+alias notes="cd ~/Notater"
 alias dots="cd $REPOS/dotfiles"
 alias dl="cd $DL"
 
