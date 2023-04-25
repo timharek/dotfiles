@@ -13,3 +13,9 @@ X = "extend_line_above"
 
 [editor.cursor-shape]
 insert = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "version-control" , "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
