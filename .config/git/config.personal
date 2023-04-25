@@ -5,5 +5,5 @@
 [sendemail]
   smtpEncryption = tls
   smtpServer = smtp.migadu.com
-  smtpUser = tim@timharek.no
+  smtpUser = tim@harek.dev
   smtpServerPort = 587
