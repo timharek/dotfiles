@@ -52,7 +52,7 @@ yabai -m rule --add app="^Firefox$"             space=web
 yabai -m rule --add app="^Chrome$"              space=work
 yabai -m rule --add app="^Mail$"                space=mail
 
-yabai -m rule --add app="^Systemvalg$"          manage=off 
+yabai -m rule --add app="^Systeminnstillinger$" manage=off 
 yabai -m rule --add app="^Pika$"                manage=off sticky=on layer=above 
 yabai -m rule --add app="^Alfred Preferences$"  manage=off 
 yabai -m rule --add app="^Mullvad VPN$"         manage=off border=off
