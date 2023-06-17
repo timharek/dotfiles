@@ -1,4 +1,6 @@
-# .-files
+[![builds.sr.ht status](https://builds.sr.ht/~timharek/dotfiles/commits/main/.build.yml.svg)](https://builds.sr.ht/~timharek/dotfiles/commits/main/.build.yml?)
+
+# dotfiles
 
 My dotfiles, mainly for my macOS setup.
 
