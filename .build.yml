@@ -1,0 +1,24 @@
+image: alpine/edge
+secrets:
+  - 0323bc6f-a046-4b96-8496-2bac6e7ee107
+sources:
+  - git+ssh://git@git.sr.ht/~timharek/dotfiles
+triggers:
+  - action: email
+    condition: failure
+    to: tim@harek.no
+tasks:
+  - check: |
+      cd dotfiles
+      if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD)" ]; then \
+        complete-build; \
+      fi
+  - mirror: |
+      cd dotfiles
+      git remote add github git@github.com:timharek/dotfiles.git
+      git remote add codeberg git@codeberg.org:timharek/dotfiles.git
+      ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
+      git push github main
+      git push codeberg main
+
