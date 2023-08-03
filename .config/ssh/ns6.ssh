@@ -1,0 +1,5 @@
+Host ns6
+  HostName login.domeneshop.no
+  Port 22
+  User ns6no
+

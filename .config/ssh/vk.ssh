@@ -1,0 +1,5 @@
+Host vk
+  HostName login.domeneshop.no
+  Port 22
+  User vestkontakt
+

@@ -3,6 +3,11 @@ Host wyd
   Port 22
   User tim
 
+Host vps.tukler
+  HostName vps.tukler.no
+  Port 22
+  User tim
+
 Host soft
   HostName git.wyd.no
   Port 23231
