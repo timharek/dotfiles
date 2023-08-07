@@ -1,8 +1,5 @@
 export GPG_TTY=$(tty)
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tim/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -58,5 +55,6 @@ export DENO_DIR="$XDG_CACHE_HOME/deno"
 export PATH="$XDG_CONFIG_HOME/deno/bin:$PATH"
 
 # Homebrew 
+export PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
 eval "$(brew shellenv)"
