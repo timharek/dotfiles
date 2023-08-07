@@ -19,10 +19,10 @@ alias dots="cd $REPOS/dotfiles"
 alias dl="cd $DL"
 
 # Repos specific
-alias th="cd $REPOS/_personal/timharek.no"
-alias vk="cd $REPOS/_vk/vestkontakt.no"
-alias netlife="cd ~/Netlife"
-alias fribyte="cd $REPOS/_fribyte"
+alias th="cd $REPOS/personal/timharek.no"
+alias vk="cd $REPOS/work/vk/vestkontakt.no"
+alias fribyte="cd $REPOS/fribyte"
+alias work="cd $HOME/work"
 
 # Binary commands
 alias speedtest="speedtest-cli"
