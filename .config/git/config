@@ -37,11 +37,15 @@
 [commit]
   gpgSign = true
   verbose = true
-	template = /Users/tim/.config/git/gitmessage
+	template = /Users/timharekandreassen/.config/git/gitmessage
 [includeIf "gitdir:~/"]
   path = ~/.config/git/config.personal
-[includeIf "gitdir:~/Netlife/"]
+[includeIf "gitdir:~/work/vk"]
+  path = ~/.config/git/config.personal
+[includeIf "gitdir:~/work/netlife"]
   path = ~/.config/git/config.netlife
+[includeIf "gitdir:~/work/"]
+  path = ~/.config/git/config.value
 [rebase]
 	autoStash = true
 [merge]
