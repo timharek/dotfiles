@@ -22,7 +22,7 @@ alias dl="cd $DL"
 alias th="cd $REPOS/personal/timharek.no"
 alias vk="cd $REPOS/work/vk/vestkontakt.no"
 alias fribyte="cd $REPOS/fribyte"
-alias work="cd $HOME/work"
+alias workd="cd $HOME/work"
 
 # Binary commands
 alias speedtest="speedtest-cli"

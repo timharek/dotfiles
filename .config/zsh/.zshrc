@@ -1,9 +1,9 @@
 # Path to your oh-my-zsh installation.
 if [[ "$(uname)" == "Darwin" ]]; then
-    export ZSH="/Users/timharekandreassen/.oh-my-zsh"
+    export ZSH="/Users/tim/.oh-my-zsh"
     export PATH="$HOME/.bin:$PATH"
 elif [[ "$(uname)" == "Linux" ]]; then
-    export ZSH="/home/timharekandreassen/.oh-my-zsh"
+    export ZSH="/home/tim/.oh-my-zsh"
     PROMPT="$fg[cyan]%}$USER@%{$fg[blue]%}%m ${PROMPT}"
 
     if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
@@ -37,7 +37,7 @@ task ready
 
 # Google Cloud SDK stuff for work
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/timharekandreassen/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/timharekandreassen/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/tim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tim/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/timharekandreassen/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/timharekandreassen/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/tim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tim/google-cloud-sdk/completion.zsh.inc'; fi
