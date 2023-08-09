@@ -58,3 +58,8 @@ export PATH="$XDG_CONFIG_HOME/deno/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
 eval "$(brew shellenv)"
+
+# Google Cloud Run SDK
+if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc" ]; then source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc" ]; then source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"; fi
+
