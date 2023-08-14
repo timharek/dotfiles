@@ -37,7 +37,7 @@
 [commit]
   gpgSign = true
   verbose = true
-	template = /Users/timharekandreassen/.config/git/gitmessage
+	template = ~/.config/git/gitmessage
 [includeIf "gitdir:~/"]
   path = ~/.config/git/config.personal
 [includeIf "gitdir:~/work/vk"]
