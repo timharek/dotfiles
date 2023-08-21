@@ -50,13 +50,16 @@
   },
   "prettier.proseWrap": "always",
   "auto-build.defaultEnv.name": "STM32F103RE_creality",
-  "window.zoomLevel": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "javascript.inlayHints.variableTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 1
 }
