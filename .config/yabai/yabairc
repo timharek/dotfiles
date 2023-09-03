@@ -40,7 +40,6 @@ yabai -m config window_gap                   20
 ## Space labels
 yabai -m space 1 --label web
 yabai -m space 2 --label work
-yabai -m space 3 --label mail
 yabai -m space 4 --label comms
 yabai -m space 5 --label terminal
 
@@ -50,7 +49,6 @@ yabai -m config layout                       bsp
 # Window rules
 yabai -m rule --add app="^Firefox$"             space=web
 yabai -m rule --add app="^Chrome$"              space=work
-yabai -m rule --add app="^Mail$"                space=mail
 
 yabai -m rule --add app="^Systeminnstillinger$" manage=off 
 yabai -m rule --add app="^Pika$"                manage=off sticky=on layer=above 
