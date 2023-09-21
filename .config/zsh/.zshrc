@@ -33,5 +33,5 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-task ready
-
+# bun completions
+[ -s "/Users/tim/.bun/_bun" ] && source "/Users/tim/.bun/_bun"
