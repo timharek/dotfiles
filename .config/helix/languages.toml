@@ -4,42 +4,45 @@ scope = "source.md"
 injection-regex = "md|markdown"
 file-types = ["md", "markdown", "PULLREQ_EDITMSG"]
 formatter = { command = "prettierd", args = ["*.md"] }
-language-server = { command = "marksman", args=["server"] }
 auto-format = true
 
 [[language]]
 name = "html"
 auto-format = false
 
-# Source : https://github.com/Rishabh672003/dotfiles/blob/47665bba4acd37a1fb3c1030d8c76b0ed9f07514/.config/helix/languages.toml
+[language-server.deno]
+command = "deno"
+args = ["lsp"]
+environment = { NO_COLOR = "1" }
+
+[language-server.deno.config.deno]
+enable = true
+suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
+
 [[language]]
 name = "javascript"
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "jsx"
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
+language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "typescript"
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
+language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "tsx"
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
+language-servers = ["deno"]
 auto-format = true
