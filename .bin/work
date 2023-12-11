@@ -3,7 +3,8 @@
 workStart() {
   echo "Launching all applications."
   open -a "Google Chrome" --args --profile-directory="Profile 2"
-  open -a "Google Chat" 
+  open -a "Google Chat" --args --profile-directory="Profile 2"
+  open -a "Slack"
 }
 
 workEnd() {
@@ -12,6 +13,7 @@ workEnd() {
   osascript -e 'quit app "Google Chat"'
   osascript -e 'quit app "Figma"'
   osascript -e 'quit app "VSCodium"'
+  osascript -e 'quit app "Slack"'
 }
 
 displayHelp() {
