@@ -78,3 +78,7 @@ file-types = ["tsx"]
 comment-token = "//"
 roots = ["package.json", "tsconfig.json"]
 language-servers = [ "typescript-language-server" ]
+
+[[language]]
+name = "prisma"
+auto-format = true
