@@ -21,28 +21,60 @@ suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.l
 
 [[language]]
 name = "javascript"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
+shebangs = ["deno"]
+roots = ["deno.json"]
+language-servers = ["deno"]
+auto-format = true
+
+[[language]]
+name = "javascript"
+file-types = ["js", "mjs", "cjs", "rules", "es6", "pac", "jakefile"]
+shebangs = ["node"]
+comment-token = "//"
+roots = ["package.json", "tsconfig.json"]
+language-servers = [ "typescript-language-server" ]
+
+[[language]]
+name = "jsx"
+shebangs = ["deno"]
+roots = ["deno.json"]
 language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "jsx"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
+scope = "source.jsx"
+file-types = ["jsx"]
+comment-token = "//"
+roots = ["package.json", "tsconfig.json"]
+language-servers = [ "typescript-language-server" ]
+
+[[language]]
+name = "typescript"
+shebangs = ["deno"]
+roots = ["deno.json"]
 language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "typescript"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
+scope = "source.ts"
+file-types = ["ts", "mts", "cts"]
+shebangs = ["deno", "ts-node"]
+roots = ["package.json", "tsconfig.json"]
+language-servers = [ "typescript-language-server" ]
+
+[[language]]
+name = "tsx"
+shebangs = ["deno"]
+roots = ["deno.json"]
 language-servers = ["deno"]
 auto-format = true
 
 [[language]]
 name = "tsx"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-language-servers = ["deno"]
-auto-format = true
+scope = "source.tsx"
+file-types = ["tsx"]
+comment-token = "//"
+roots = ["package.json", "tsconfig.json"]
+language-servers = [ "typescript-language-server" ]
