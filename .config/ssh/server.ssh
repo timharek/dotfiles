@@ -18,6 +18,11 @@ Host ravn
   Port 22
   User tim
 
+Host ravn-local
+  HostName 192.168.10.161
+  Port 22
+  User tim
+
 host bitbucket.org
   HostKeyAlgorithms=+ssh-rsa
   PubkeyAcceptedKeyTypes=+ssh-rsa
