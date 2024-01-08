@@ -6,6 +6,10 @@ mouse = false
 bufferline = "multiple"
 rulers = [80]
 
+idle-timeout = 200
+completion-trigger-len = 1
+completion-replace = true
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 C-x = ":buffer-close"
@@ -24,3 +28,7 @@ separator = "│"
 
 [editor.file-picker]
 hidden = false
+
+[editor.indent-guides]
+render = true
+                   
