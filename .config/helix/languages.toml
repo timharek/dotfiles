@@ -27,27 +27,11 @@ language-servers = ["deno"]
 auto-format = true
 
 [[language]]
-name = "javascript"
-file-types = ["js", "mjs", "cjs", "rules", "es6", "pac", "jakefile"]
-shebangs = ["node"]
-comment-token = "//"
-roots = ["package.json", "tsconfig.json"]
-language-servers = [ "typescript-language-server" ]
-
-[[language]]
 name = "jsx"
 shebangs = ["deno"]
 roots = ["deno.json"]
 language-servers = ["deno"]
 auto-format = true
-
-[[language]]
-name = "jsx"
-scope = "source.jsx"
-file-types = ["jsx"]
-comment-token = "//"
-roots = ["package.json", "tsconfig.json"]
-language-servers = [ "typescript-language-server" ]
 
 [[language]]
 name = "typescript"
@@ -57,28 +41,20 @@ language-servers = ["deno"]
 auto-format = true
 
 [[language]]
-name = "typescript"
-scope = "source.ts"
-file-types = ["ts", "mts", "cts"]
-shebangs = ["deno", "ts-node"]
-roots = ["package.json", "tsconfig.json"]
-language-servers = [ "typescript-language-server" ]
-
-[[language]]
 name = "tsx"
 shebangs = ["deno"]
 roots = ["deno.json"]
 language-servers = ["deno"]
 auto-format = true
 
-[[language]]
-name = "tsx"
-scope = "source.tsx"
-file-types = ["tsx"]
-comment-token = "//"
-roots = ["package.json", "tsconfig.json"]
-language-servers = [ "typescript-language-server" ]
+[language-server.efm-lsp-prettier]
+command = "efm-langserver"
+
+[language-server.efm-lsp-prettier.config]
+documentFormatting = true
+languages = { typescript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ] }
 
 [[language]]
 name = "prisma"
 auto-format = true
+
