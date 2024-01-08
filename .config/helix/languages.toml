@@ -1,3 +1,23 @@
+[language-server.deno]
+command = "deno"
+args = ["lsp"]
+environment = { NO_COLOR = "1" }
+
+[language-server.deno.config.deno]
+enable = true
+suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
+
+[language-server.emmet]
+command = "emmet-ls"
+args = [ "--stdio" ]
+
+[language-server.efm-lsp-prettier]
+command = "efm-langserver"
+
+[language-server.efm-lsp-prettier.config]
+documentFormatting = true
+languages = { typescript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ] }
+
 [[language]]
 name = "markdown"
 scope = "source.md"
@@ -7,17 +27,10 @@ formatter = { command = "prettierd", args = ["*.md"] }
 auto-format = true
 
 [[language]]
-name = "html"
-auto-format = false
-
-[language-server.deno]
-command = "deno"
-args = ["lsp"]
-environment = { NO_COLOR = "1" }
-
-[language-server.deno.config.deno]
-enable = true
-suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
+name = "yaml"
+language-servers = ["yaml-language-server", "ansible-language-server"]
+indent = { tab-width = 2, unit = "  " }
+auto-format = true
 
 [[language]]
 name = "javascript"
@@ -30,7 +43,7 @@ auto-format = true
 name = "jsx"
 shebangs = ["deno"]
 roots = ["deno.json"]
-language-servers = ["deno"]
+language-servers = ["deno", "emmet"]
 auto-format = true
 
 [[language]]
@@ -44,17 +57,29 @@ auto-format = true
 name = "tsx"
 shebangs = ["deno"]
 roots = ["deno.json"]
-language-servers = ["deno"]
+language-servers = ["deno", "emmet"]
 auto-format = true
-
-[language-server.efm-lsp-prettier]
-command = "efm-langserver"
-
-[language-server.efm-lsp-prettier.config]
-documentFormatting = true
-languages = { typescript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ] }
 
 [[language]]
 name = "prisma"
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "emmet" ]
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "emmet" ]
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "scss"
+language-servers = [ "vscode-css-language-server", "emmet" ]
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+file-types = ["scss"]
 auto-format = true
 
