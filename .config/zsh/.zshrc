@@ -25,7 +25,7 @@ export EDITOR=hx
 
 source ~/.config/aliasrc
 source ~/.config/functionrc
-source $XDG_CONFIG_HOME/zsh/.secret
+source ~/.config/zsh/.secret
 
 bindkey -v
 
@@ -35,3 +35,7 @@ eval "$(starship init zsh)"
 
 # bun completions
 [ -s "/Users/tim/.bun/_bun" ] && source "/Users/tim/.bun/_bun"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+source <(yr completions zsh)
