@@ -61,5 +61,6 @@
   "javascript.inlayHints.variableTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "eslint.workingDirectories": []
 }
