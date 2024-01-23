@@ -1,13 +1,2 @@
-@hubspot
-@sanity
-@solid
-@tailwindcss
-depcheck
-ghost-cli
-gscan
+corepack
 npm
-pyright
-sanity
-tailwindcss
-vscode-langservers-extracted
-wipeclean
