@@ -1,16 +1,6 @@
-Host wyd
-  HostName wyd.no
-  Port 22
-  User tim
-
-Host vps.tukler
+Host vps
   HostName vps.tukler.no
   Port 22
-  User tim
-
-Host soft
-  HostName git.wyd.no
-  Port 23231
   User tim
 
 Host ravn
