@@ -36,6 +36,8 @@
   rc = rebase --continue
   delete-squashed = "!f() { local targetBranch=${1:-main} && git checkout -q $targetBranch && git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d && git for-each-ref refs/heads/ \"--format=%(refname:short)\" | while read branch; do mergeBase=$(git merge-base $targetBranch $branch) && [[ $(git cherry $targetBranch $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == \"-\"* ]] && git branch -D $branch; done; }; f"
 
+  staash = stash -u
+
 [commit]
   gpgSign = true
   verbose = true
@@ -59,3 +61,13 @@
 	rebase = true
 [gpg]
 	program = gpg
+[maintenance]
+	repo = /Users/tim/repos/dotfiles
+	repo = /Users/tim/work/value-360
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[rerere]
+	enabled = true
+
