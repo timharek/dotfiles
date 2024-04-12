@@ -19,9 +19,7 @@ alias dots="cd $REPOS/dotfiles"
 alias dl="cd $DL"
 
 # Repos specific
-alias th="cd $REPOS/personal/timharek.no"
-alias vk="cd $REPOS/work/vk/vestkontakt.no"
-alias fribyte="cd $REPOS/fribyte"
+alias th="cd $REPOS/timharek.no"
 alias workd="cd $HOME/work"
 
 # Binary commands
