@@ -39,3 +39,6 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 source <(yr completions zsh)
+
+export LEDGER_FILE=~/finance/2024.journal
+export LANG=en_US.UTF-8
