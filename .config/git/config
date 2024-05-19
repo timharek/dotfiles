@@ -61,10 +61,6 @@
 	rebase = true
 [gpg]
 	program = gpg
-[maintenance]
-	repo = /Users/tim/repos/dotfiles
-	repo = /Users/tim/work/value-360
-	repo = /Users/tim/repos/fribyte/fribyte.no
 [branch]
 	sort = -committerdate
 [column]
