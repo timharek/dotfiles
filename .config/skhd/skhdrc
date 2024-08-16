@@ -7,7 +7,7 @@
 ###########################################################################
 
 # Applications
-cmd - return : open -a /Applications/iTerm.app
+cmd - return : open -a /Applications/WezTerm.app
 shift + cmd - return : open -a /Applications/Firefox.app
 shift + alt - b : open -a /Applications/Bitwarden.app
 
