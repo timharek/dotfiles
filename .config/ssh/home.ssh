@@ -28,3 +28,8 @@ Host hass
   Port 22
   User root
 
+Host anton
+  HostName 192.168.1.238
+  Port 22
+  User tim
+
