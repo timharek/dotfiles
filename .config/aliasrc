@@ -38,6 +38,7 @@ alias eza="eza --sort=type --icons"
 alias tree="eza --sort=type --icons -T"
 alias cat="bat"
 alias tp="tmux new -s $(basename $(pwd))"
+alias dog="doggo"
 
 # Misc
 alias cv-new="weasyprint https://timharek.no/resume"
