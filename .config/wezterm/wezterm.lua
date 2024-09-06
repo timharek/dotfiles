@@ -13,10 +13,36 @@ config.enable_tab_bar = false
 config.window_decorations = 'RESIZE'
 
 config.keys = {
-  {  
+  {
     key = 'Enter',
     mods = 'ALT',
     action = wezterm.action.DisableDefaultAssignment,
+  },
+-- Norwegian keys
+  {
+    key = '7',
+    mods = 'ALT',
+    action = wezterm.action.SendString "|",
+  },
+  {
+    key = '8',
+    mods = 'ALT',
+    action = wezterm.action.SendString "[",
+  },
+  {
+    key = '9',
+    mods = 'ALT',
+    action = wezterm.action.SendString "]",
+  },
+  {
+    key = '(',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.SendString "{",
+  },
+  {
+    key = ')',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.SendString "}",
   },
 }
 
