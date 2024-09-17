@@ -96,3 +96,9 @@ name = "go"
 auto-format = true
 formatter = { command = "goimports" }
 
+[language-server.pkl-ls]
+command = "/Users/tim/tmp/pkl-lsp/bin/pkl-lsp"
+
+[[language]]
+name = "pkl"
+language-servers = [ "pkl-ls" ]
