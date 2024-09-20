@@ -30,6 +30,8 @@
   cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|staging\\|production' | xargs -n 1 git branch -d"
   cleanupb = "!git fetch origin --prune"
 
+  latestTag = describe --tags --abbrev=0
+
   fuckit = reset --hard
 
   r = rebase
@@ -54,6 +56,7 @@
 	autoStash = true
 [merge]
 	autoStash = true
+	conflictStyle = "zdiff3"
 [pager]
    diff = diff-so-fancy | less --tabs=1,5 -RFX
    show = diff-so-fancy | less --tabs=1,5 -RFX

@@ -20,8 +20,8 @@ C-r = ":reload-all"
 insert = "bar"
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name"]
+left = ["mode", "spinner", "file-name"]
+center = ["workspace-diagnostics"]
 right = ["diagnostics", "version-control" , "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
 
