@@ -20,6 +20,7 @@ shift + cmd - h : yabai -m window --swap recent
 
 ## Rotate windows
 shift + alt - r : yabai -m space --rotate 90
+cmd + alt - r : yabai -m space --rotate 90
 
 ## Toggle fullscreen
 alt + cmd - return : yabai -m window --toggle zoom-fullscreen
