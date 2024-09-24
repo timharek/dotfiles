@@ -3,20 +3,29 @@ command = "deno"
 args = ["lsp"]
 environment = { NO_COLOR = "1" }
 
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+
+[language-server.harper-ls.config.harper-ls.linters]
+spaces = false
+
 [language-server.deno.config.deno]
 enable = true
 suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
 
 [language-server.emmet]
 command = "emmet-ls"
-args = [ "--stdio" ]
+args = ["--stdio"]
 
 [language-server.efm-lsp-prettier]
 command = "efm-langserver"
 
 [language-server.efm-lsp-prettier.config]
 documentFormatting = true
-languages = { typescript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ] }
+languages = { typescript = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true },
+] }
 
 [[language]]
 name = "markdown"
@@ -24,6 +33,7 @@ scope = "source.md"
 injection-regex = "md|markdown"
 file-types = ["md", "markdown", "PULLREQ_EDITMSG"]
 formatter = { command = "prettierd", args = ["*.md"] }
+language-servers = ["harper-ls"]
 auto-format = true
 
 [[language]]
@@ -66,19 +76,19 @@ auto-format = true
 
 [[language]]
 name = "html"
-language-servers = [ "vscode-html-language-server", "emmet" ]
+language-servers = ["vscode-html-language-server", "emmet"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 
 [[language]]
 name = "css"
-language-servers = [ "vscode-css-language-server", "emmet" ]
+language-servers = ["vscode-css-language-server", "emmet"]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
 
 [[language]]
 name = "scss"
-language-servers = [ "vscode-css-language-server", "emmet" ]
+language-servers = ["vscode-css-language-server", "emmet"]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 file-types = ["scss"]
 auto-format = true
@@ -89,7 +99,7 @@ args = ["up", "--method", "stdio"]
 
 [[language]]
 name = "sql"
-language-servers = [ "sql-language-server" ]
+language-servers = ["sql-language-server"]
 
 [[language]]
 name = "go"
@@ -101,4 +111,4 @@ command = "/Users/tim/tmp/pkl-lsp/bin/pkl-lsp"
 
 [[language]]
 name = "pkl"
-language-servers = [ "pkl-ls" ]
+language-servers = ["pkl-ls"]
