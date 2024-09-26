@@ -33,7 +33,7 @@ scope = "source.md"
 injection-regex = "md|markdown"
 file-types = ["md", "markdown", "PULLREQ_EDITMSG"]
 formatter = { command = "prettierd", args = ["*.md"] }
-language-servers = ["harper-ls"]
+language-servers = ["harper-ls", "marksman"]
 auto-format = true
 
 [[language]]
