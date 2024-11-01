@@ -12,7 +12,6 @@ spaces = false
 
 [language-server.deno.config.deno]
 enable = true
-suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
 
 [language-server.emmet]
 command = "emmet-ls"
