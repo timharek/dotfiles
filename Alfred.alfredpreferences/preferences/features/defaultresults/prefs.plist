@@ -4,7 +4,7 @@
 <dict>
 	<key>fallbacks</key>
 	<array>
-		<string>features.websearch.duckduckgo.fallback</string>
+		<string>features.websearch.custom.DDAD722E-E6E5-4AC1-AD7D-B318811893FC.fallback</string>
 	</array>
 </dict>
 </plist>
