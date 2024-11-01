@@ -98,7 +98,7 @@ auto-format = true
 formatter = { command = "goimports" }
 
 [language-server.pkl-ls]
-command = "/Users/tim/tmp/pkl-lsp/bin/pkl-lsp"
+command = "/Users/tim/.bin/pkl-ls"
 
 [[language]]
 name = "pkl"
