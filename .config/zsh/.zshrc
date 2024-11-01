@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 unset MAILCHECK
 
 export EDITOR=hx
+export PAGER=bat
 
 source ~/.config/aliasrc
 source ~/.config/functionrc
