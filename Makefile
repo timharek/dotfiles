@@ -1,6 +1,9 @@
 NPM_PACKAGES_FILE_NAME = npm_packages.txt
 VSCODIUM_EXTENTIONS_FILE_NAME = vscodium/vscodium_extentions.txt
 
+help: ## Show this help
+	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
 setup: ## Setup fresh install of macOS
 	sudo -v
 	chmod +x macos
@@ -28,7 +31,4 @@ code: ## Install VSCodium / VS Code extensions from dump-file
 
 code-dump: ## Update dump-file for extensions for VSCodium / VS Code
 	@codium --list-extensions > ${VSCODIUM_EXTENTIONS_FILE_NAME}
-
-help: ## Show this help
-	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
