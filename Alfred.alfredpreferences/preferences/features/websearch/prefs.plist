@@ -13,7 +13,7 @@
 			<key>text</key>
 			<string>Search Kagi for '{query}'</string>
 			<key>url</key>
-			<string>https://kagi.com/search?token=NABAY8f0IgU.n5JfO2-R5fso16tYybnQFjidTKBlzsDu-w7o3UoAMa0&amp;q={query}</string>
+			<string>https://kagi.com/search?q={query}</string>
 		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
