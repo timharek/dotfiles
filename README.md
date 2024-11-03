@@ -2,18 +2,16 @@
 
 # dotfiles
 
-My dotfiles, mainly for my macOS setup.
+My dotfiles for my macOS setup.
 
 ## What I use
 
-- OS: macOS 12 Ventura
 - Shell: [`zsh`](.config/zsh)
-- Terminal: [iterm2](.config/iterm)
-- Editors: [`nvim`](.config/nvim), [Helix](.config/helix) & [VSCodium](vscodium)
-- Window manager: [`yabai`](.config/yabai)
+- Terminal: [WezTerm](.config/wezterm/wezterm.lua)
+- Editors: [Helix](.config/helix)
+- Window manager: [`yabai`](.config/yabai/yabairc)
 - Browser: Firefox
 - Package manager: [Homebrew](https://brew.sh)
-- [Keyboard shortcuts](KEYBOARD.md)
 
 ## Usage
 
