@@ -60,6 +60,7 @@ yabai -m rule --add app="^Numi$"                manage=off sticky=on
 yabai -m rule --add app="^Harvest$"             manage=off
 yabai -m rule --add app="^LibreOffice$"         manage=off
 yabai -m rule --add app="^Bilde i bilde$"       manage=off
-yabai -m rule --add app="^Dato$"       manage=off
+yabai -m rule --add app="^Dato$"                manage=off
+yabai -m rule --add app="^LuLu$"                manage=off sticky=on layer=above 
 
 echo "yabai configuration loaded.."
