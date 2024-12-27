@@ -1,0 +1,8 @@
+font-size = 16
+
+theme = catppuccin-macchiato
+
+keybind = cmd+,=open_config
+
+keybind = global:alt+p=toggle_quick_terminal
+quick-terminal-animation-duration = 0.1
