@@ -1,7 +1,6 @@
 [user]
 	name = Tim Hårek Andreassen
 	email = tim@harek.no
-	signingkey = F6A1E22056C5806E69528AB2E59C7734F0E10EB5
 [sendemail]
   smtpEncryption = tls
   smtpServer = smtp.migadu.com

@@ -12,10 +12,10 @@
   bD = branch -D
   bd = branch -d
 
-  c = commit -s -S
+  c = commit 
   ca = c -a
-  a = c --amend 
-  ae = a --no-edit
+  caa = c --amend 
+  caae = a --no-edit
 
   p = push
   pnew = !git push --set-upstream origin $(git branch --show-current)
@@ -41,9 +41,7 @@
   staash = stash -u
 
 [commit]
-  gpgSign = true
-  verbose = true
-	template = ~/.config/git/gitmessage
+  template = ~/.config/git/gitmessage
 [includeIf "gitdir:~/"]
   path = ~/.config/git/config.personal
 [includeIf "gitdir:~/work/vk"]
@@ -70,7 +68,6 @@
 	ui = auto
 [rerere]
 	enabled = true
-
 [fetch]
 	prune = true
 [log]
