@@ -4,7 +4,6 @@ workStart() {
   echo "Launching all applications."
   open -a "Google Chrome" --args --profile-directory="Profile 2"
   open -a "Google Chat" --args --profile-directory="Profile 2"
-  open -a "Slack"
 }
 
 workEnd() {
