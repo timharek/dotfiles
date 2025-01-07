@@ -1,6 +1,6 @@
 font-size = 16
 
-theme = catppuccin-macchiato
+theme = OneHalfDarkModified
 
 keybind = cmd+,=open_config
 
