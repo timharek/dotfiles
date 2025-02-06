@@ -1,0 +1,10 @@
+.git
+.gitignore
+LICENSE
+.build.yml
+Alfred.alfredpreferences
+Makefile
+README.md
+macos
+vscodium
+voyager-config.bin
