@@ -63,4 +63,7 @@ yabai -m rule --add app="^Bilde i bilde$"       manage=off
 yabai -m rule --add app="^Dato$"                manage=off
 yabai -m rule --add app="^LuLu$"                manage=off sticky=on layer=above 
 
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+
 echo "yabai configuration loaded.."
