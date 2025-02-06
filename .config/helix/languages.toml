@@ -103,3 +103,12 @@ command = "/Users/tim/.bin/pkl-ls"
 [[language]]
 name = "pkl"
 language-servers = ["pkl-ls"]
+
+[language-server.jinja-lsp]
+command = "jinja-lsp"
+config = { templates = "./templates", backend = ["./src"], lang = "rust"}
+timeout = 5
+
+[[language]]
+name = "jinja"
+language-servers = ["jinja-lsp"]
