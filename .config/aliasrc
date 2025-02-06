@@ -14,7 +14,7 @@ alias hedit="$EDITOR ~/.config/helix"
 # Navigation
 alias repos="cd $REPOS"
 alias notes="cd ~/Notater"
-alias dots="cd $REPOS/dotfiles"
+alias dots="cd ~/dotfiles"
 alias dl="cd $DL"
 
 # Repos specific
@@ -38,6 +38,7 @@ alias tree="eza --sort=type --icons -T"
 alias cat="bat"
 alias tp="tmux new -s $(basename $(pwd))"
 alias dog="doggo"
+alias nn="notetaker"
 
 # Misc
 alias norid="whois -p 79 -h finger.norid.no"
