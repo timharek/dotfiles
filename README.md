@@ -7,7 +7,7 @@ My dotfiles for my macOS setup.
 ## What I use
 
 - Shell: [`zsh`](.config/zsh)
-- Terminal: [WezTerm](.config/wezterm/wezterm.lua)
+- Terminal: [Ghostty](.config/ghostty/config)
 - Editors: [Helix](.config/helix)
 - Window manager: [`yabai`](.config/yabai/yabairc)
 - Browser: Firefox
@@ -21,4 +21,7 @@ make setup
 
 # See all available commands for dotfiles
 make help
+
+# Symlink everything
+stow --adopt .
 ```
