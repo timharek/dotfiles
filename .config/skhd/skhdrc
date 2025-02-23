@@ -8,7 +8,7 @@
 
 # Applications
 cmd - return : open -a /Applications/Ghostty.app
-shift + cmd - return : open -a /Applications/Firefox.app
+shift + cmd - return : open -a "/Applications/Zen Browser.app"
 shift + alt - b : open -a /Applications/Bitwarden.app
 
 # Yabai
