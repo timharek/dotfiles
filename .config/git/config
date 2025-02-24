@@ -18,7 +18,6 @@
   caae = a --no-edit
 
   p = push
-  pnew = !git push --set-upstream origin $(git branch --show-current)
 
   co = checkout
 
@@ -28,7 +27,6 @@
   rem = remote -v
 
   cleanup = "!git branch --merged | grep  -v '\\*\\|main\\|master\\|develop\\|staging\\|production' | xargs -n 1 git branch -d"
-  cleanupb = "!git fetch origin --prune"
 
   latestTag = describe --tags --abbrev=0
 
@@ -41,7 +39,8 @@
   staash = stash -u
 
 [commit]
-  template = ~/.config/git/gitmessage
+	template = ~/.config/git/gitmessage
+	verbose = true
 [includeIf "gitdir:~/"]
   path = ~/.config/git/config.personal
 [includeIf "gitdir:~/work/vk"]
@@ -52,6 +51,8 @@
   path = ~/.config/git/config.value
 [rebase]
 	autoStash = true
+	autoSquash = true
+	updateRefs = true
 [merge]
 	autoStash = true
 	conflictStyle = "zdiff3"
@@ -68,7 +69,25 @@
 	ui = auto
 [rerere]
 	enabled = true
+	autoupdate = true
 [fetch]
 	prune = true
 [log]
 	date = iso
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
