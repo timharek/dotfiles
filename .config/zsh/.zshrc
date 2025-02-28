@@ -30,6 +30,7 @@ source ~/.config/zsh/.secret
 bindkey -v
 
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
