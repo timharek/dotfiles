@@ -63,7 +63,9 @@ yabai -m rule --add app="^Bilde i bilde$"       manage=off
 yabai -m rule --add app="^Dato$"                manage=off
 yabai -m rule --add app="^LuLu$"                manage=off sticky=on layer=above 
 
-yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
-yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
+yabai -m signal --add app='^Finder$' event=window_created action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
+yabai -m signal --add app='^Finder$' event=window_destroyed action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
 
 echo "yabai configuration loaded.."
