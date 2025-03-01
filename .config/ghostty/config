@@ -1,3 +1,5 @@
+command = /opt/homebrew/bin/fish --login --interactive
+
 font-size = 16
 
 theme = OneHalfDarkModified
