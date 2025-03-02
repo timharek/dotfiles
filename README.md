@@ -6,11 +6,11 @@ My dotfiles for my macOS setup.
 
 ## What I use
 
-- Shell: [`zsh`](.config/zsh)
+- Shell: [`fish`](.config/fish)
 - Terminal: [Ghostty](.config/ghostty/config)
 - Editors: [Helix](.config/helix)
 - Window manager: [`yabai`](.config/yabai/yabairc)
-- Browser: Firefox
+- Browser: Zen Browser
 - Package manager: [Homebrew](https://brew.sh)
 
 ## Usage
