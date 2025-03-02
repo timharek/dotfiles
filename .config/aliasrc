@@ -16,6 +16,9 @@ alias repos="cd $REPOS"
 alias notes="cd ~/Notater"
 alias dots="cd ~/dotfiles"
 alias dl="cd $DL"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Repos specific
 alias th="cd $REPOS/timharek.no"
