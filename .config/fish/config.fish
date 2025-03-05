@@ -4,8 +4,8 @@ end
 
 # fish
 set fish_greeting
-set EDITOR hx
-set PAGER bat
+export EDITOR=hx
+export PAGER=bat
 
 starship init fish | source
 
