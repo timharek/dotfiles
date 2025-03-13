@@ -67,6 +67,8 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+export PATH="$HOME/.bin:$PATH"
+
 starship init fish | source
 
 source ~/.config/aliasrc
