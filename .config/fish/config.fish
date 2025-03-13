@@ -7,15 +7,6 @@ set fish_greeting
 export EDITOR=hx
 export PAGER=bat
 
-starship init fish | source
-
-source ~/.config/aliasrc
-
-op completion fish | source
-yr completion fish | source
-migadu completion fish | source
-art completion fish | source
-
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -75,3 +66,12 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # Volta (like nvm)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+starship init fish | source
+
+source ~/.config/aliasrc
+
+op completion fish | source
+yr completion fish | source
+migadu completion fish | source
+art completion fish | source
