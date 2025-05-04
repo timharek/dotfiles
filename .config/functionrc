@@ -1,12 +1,4 @@
-# simple mkdir && cd
-mcd() {
-    mkdir -p $1 
-    cd $1
-}
-
-pdoc() {
-  INPUT_FILE="$1"
-  OUTPUT_FILE="$(echo $1 | sed 's/.md/.pdf/g')"
-
-  pandoc -s $INPUT_FILE -o $OUTPUT_FILE
-}
+function mkcd
+  mkdir $argv
+  and cd $argv
+end
