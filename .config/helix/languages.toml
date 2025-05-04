@@ -96,6 +96,7 @@ auto-format = true
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+language-servers = ["gopls"]
 
 [language-server.pkl-ls]
 command = "/Users/tim/.bin/pkl-ls"
