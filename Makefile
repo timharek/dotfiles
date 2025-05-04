@@ -9,18 +9,11 @@ setup: ## Setup fresh install of macOS
 	chmod +x macos
 	./macos
 
-setup-zsh: # Oh-my-zsh
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-	git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
-	echo "Restart your machine"
-
-setup-brew: ## Install Homebrew and Brewfile formulaes and casks
+brew-setup: ## Install Homebrew and Brewfile formulaes and casks
 	brew --version || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	brew bundle --file=~/.config/brew/Brewfile
 	ln -s ~/repos/dotfiles/vscodium/settings.json ~/Library/Application\ Support/VSCodium/User/settings.json
 
-dump-brew: ## Update Homebrew formulaes and casks dump
+brew-dump: ## Update Homebrew formulaes and casks dump
 	@brew bundle dump -f
 
