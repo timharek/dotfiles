@@ -72,8 +72,13 @@ export PATH="$HOME/.bin:$PATH"
 starship init fish | source
 
 source ~/.config/aliasrc
+source ~/.config/functionrc
 
 op completion fish | source
 yr completion fish | source
 migadu completion fish | source
 art completion fish | source
+docker completion fish | source
+
+direnv hook fish | source
+direnv export fish | source
