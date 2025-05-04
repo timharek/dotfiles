@@ -8,9 +8,7 @@
   d = diff
   b = branch 
   bb = !~/.config/git/better-branch.sh
-  ba = branch -av
-  bD = branch -D
-  bd = branch -d
+  ba = branch -avvvv
 
   c = commit 
   ca = c -a
@@ -19,7 +17,7 @@
 
   p = push
 
-  co = checkout
+  sw = switch
 
   l = log --all --color --graph --pretty=format:'%Cred%h%Creset %G?%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   hd = show -p --pretty="tformat:"
@@ -36,17 +34,11 @@
   rc = rebase --continue
   delete-squashed = "!f() { local targetBranch=${1:-main} && git checkout -q $targetBranch && git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d && git for-each-ref refs/heads/ \"--format=%(refname:short)\" | while read branch; do mergeBase=$(git merge-base $targetBranch $branch) && [[ $(git cherry $targetBranch $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == \"-\"* ]] && git branch -D $branch; done; }; f"
 
-  staash = stash -u
-
 [commit]
 	template = ~/.config/git/gitmessage
 	verbose = true
 [includeIf "gitdir:~/"]
   path = ~/.config/git/config.personal
-[includeIf "gitdir:~/work/vk"]
-  path = ~/.config/git/config.personal
-[includeIf "gitdir:~/work/netlife"]
-  path = ~/.config/git/config.netlife
 [includeIf "gitdir:~/work/"]
   path = ~/.config/git/config.value
 [rebase]
