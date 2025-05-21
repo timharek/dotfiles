@@ -5,7 +5,7 @@ end
 # fish
 set fish_greeting
 export EDITOR=hx
-export PAGER=bat
+export PAGER="bat -p"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export XDG_CONFIG_HOME="$HOME/.config"
