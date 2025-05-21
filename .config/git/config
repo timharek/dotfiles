@@ -49,8 +49,9 @@
 	autoStash = true
 	conflictStyle = "zdiff3"
 [pager]
-   diff = diff-so-fancy | less --tabs=1,5 -RFX
-   show = diff-so-fancy | less --tabs=1,5 -RFX
+   diff = bat -l diff -p
+   show = bat -l diff -p
+   log = bat -l gitlog -p
 [pull]
 	rebase = true
 [gpg]
