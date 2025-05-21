@@ -8,6 +8,8 @@ export EDITOR=hx
 export PAGER="bat -p"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+export BAT_THEME="OneHalfDark"
+
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
