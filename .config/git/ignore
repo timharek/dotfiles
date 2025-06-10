@@ -2,3 +2,5 @@
 *.bak
 .todo.md
 .envrc
+
+**/.claude/settings.local.json
