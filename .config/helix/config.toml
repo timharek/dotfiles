@@ -20,6 +20,10 @@ C-x = ":buffer-close"
 X = ["extend_line_up", "extend_to_line_bounds"]
 C-n = ":new"
 C-r = ":reload-all"
+# C-n = ["goto_next_diag"]
+# C-p = ["goto_prev_diag"]
+C-k = ["delete_selection", "move_visual_line_up", "paste_before"]
+C-j = ["delete_selection", "move_visual_line_down", "paste_before"]
 
 [editor.cursor-shape]
 insert = "bar"

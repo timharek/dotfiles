@@ -1,0 +1,119 @@
+{
+  "actions" : [
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Spotify.app"
+        },
+        {
+          "key" : "d",
+          "type" : "folder",
+          "value" : "/Users/tim/Downloads"
+        },
+        {
+          "key" : "k",
+          "type" : "application",
+          "value" : "/System/Applications/Calendar.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/Applications/NetNewsWire.app"
+        }
+      ],
+      "key" : "o",
+      "type" : "group"
+    },
+    {
+      "key" : "z",
+      "type" : "application",
+      "value" : "/Applications/Zen Browser.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "b",
+          "type" : "application",
+          "value" : "/Applications/Bruno.app"
+        },
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Docker.app"
+        }
+      ],
+      "key" : "d",
+      "label" : "developer",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "r",
+          "label" : "rotate",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/yabai -m space --rotate 90"
+        },
+        {
+          "key" : "R",
+          "label" : "flip",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/yabai -m space --rotate 180"
+        },
+        {
+          "key" : "↵",
+          "label" : "fullscreen",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen"
+        },
+        {
+          "key" : "f",
+          "label" : "float",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/yabai -m window --toggle float"
+        }
+      ],
+      "key" : "y",
+      "label" : "yabai",
+      "type" : "group"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Signal.app"
+    },
+    {
+      "key" : "a",
+      "type" : "application",
+      "value" : "/Applications/Alfred 5.app"
+    },
+    {
+      "key" : "n",
+      "type" : "application",
+      "value" : "/Applications/Numi.app"
+    },
+    {
+      "key" : ",",
+      "type" : "application",
+      "value" : "/System/Applications/System Settings.app"
+    },
+    {
+      "key" : "1",
+      "type" : "application",
+      "value" : "/Applications/1Password.app"
+    }
+  ],
+  "type" : "group"
+}

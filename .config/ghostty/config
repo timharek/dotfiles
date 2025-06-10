@@ -10,3 +10,4 @@ keybind = global:alt+p=toggle_quick_terminal
 quick-terminal-animation-duration = 0.1
 
 macos-icon = holographic
+keybind = shift+enter=text:\n
