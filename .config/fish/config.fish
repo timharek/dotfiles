@@ -72,16 +72,18 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 export PATH="$HOME/.bin:$PATH"
 
-starship init fish | source
+if status is-interactive
+    starship init fish | source
 
-source ~/.config/aliasrc
-source ~/.config/functionrc
+    source ~/.config/aliasrc
+    source ~/.config/functionrc
 
-op completion fish | source
-yr completion fish | source
-migadu completion fish | source
-art completion fish | source
-docker completion fish | source
+    op completion fish | source
+    yr completion fish | source
+    migadu completion fish | source
+    art completion fish | source
+    docker completion fish | source
 
-direnv hook fish | source
-direnv export fish | source
+    direnv hook fish | source
+    direnv export fish | source
+end
