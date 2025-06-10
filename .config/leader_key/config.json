@@ -113,6 +113,11 @@
       "key" : "1",
       "type" : "application",
       "value" : "/Applications/1Password.app"
+    },
+    {
+      "key" : "c",
+      "type" : "application",
+      "value" : "/Applications/Claude.app"
     }
   ],
   "type" : "group"
