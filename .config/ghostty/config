@@ -11,3 +11,4 @@ quick-terminal-animation-duration = 0.1
 
 macos-icon = holographic
 keybind = shift+enter=text:\n
+macos-option-as-alt = true
