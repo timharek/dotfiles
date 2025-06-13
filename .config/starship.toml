@@ -1,5 +1,7 @@
 add_newline = true
 
+format = "$time$all"
+
 [character]
 success_symbol = "[=>](bold green)" 
 
@@ -17,3 +19,6 @@ tag_disabled = false
 [gcloud]
 format = ''
 
+[time]
+disabled = false
+format = "[$time]($style) "
