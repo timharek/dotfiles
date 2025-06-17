@@ -87,3 +87,4 @@ if status is-interactive
     direnv hook fish | source
     direnv export fish | source
 end
+alias claude="/Users/tim/.claude/local/claude"
