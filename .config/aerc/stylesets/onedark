@@ -1,0 +1,78 @@
+#
+# OneDark color scheme for aerc
+#
+# Based on the OneDark theme with proper color mappings
+# for aerc's interface elements
+#
+
+# Base colors
+*.default=true
+*.bg=#282c34
+*.fg=#abb2bf
+
+# Selection
+*.selected.bg=#3e4451
+*.selected.fg=#61afef
+
+# Title bar
+title.bg=#21252b
+title.fg=#abb2bf
+title.bold=true
+
+# Headers
+header.bg=#282c34
+header.fg=#e06c75
+header.bold=true
+
+# Status indicators
+*error.bold=true
+error.fg=#e06c75
+warning.fg=#e5c07b
+success.fg=#98c379
+
+# Status line
+statusline*.bg=#21252b
+statusline*.fg=#abb2bf
+statusline_default.bg=#21252b
+statusline_default.fg=#abb2bf
+statusline_error.fg=#e06c75
+statusline_error.bg=#21252b
+
+# Message list
+msglist_default.bg=#282c34
+msglist_default.fg=#abb2bf
+msglist_default.selected.bg=#3e4451
+msglist_default.selected.fg=#61afef
+
+msglist_marked.bg=#61afef
+msglist_marked.fg=#282c34
+msglist_marked.bold=true
+
+msglist_unread.bold=true
+msglist_unread.fg=#61afef
+msglist_deleted.fg=#5c6370
+
+# Borders
+border.bg=#21252b
+border.fg=#3e4451
+
+# Tabs
+tab.bg=#21252b
+tab.fg=#5c6370
+tab.selected.bg=#282c34
+tab.selected.fg=#abb2bf
+
+# Completion
+completion_default.bg=#282c34
+completion_default.fg=#abb2bf
+completion_pill.bg=#61afef
+completion_pill.fg=#282c34
+
+# Selectors
+selector_default.bg=#282c34
+selector_default.fg=#abb2bf
+selector_focused.bg=#3e4451
+selector_focused.fg=#61afef
+selector_chooser.bold=true
+selector_chooser.fg=#98c379
+
