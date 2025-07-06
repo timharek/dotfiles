@@ -92,11 +92,18 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 file-types = ["scss"]
 auto-format = true
 
+[language-server.golangci-lint-lsp]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint-lsp.config]
+command = ["golangci-lint", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
+
 [[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-language-servers = ["gopls"]
+roots = ["go.mod"]
+language-servers = ["gopls", "golangci-lint-lsp"]
 
 [language-server.pkl-ls]
 command = "/Users/tim/.bin/pkl-ls"
