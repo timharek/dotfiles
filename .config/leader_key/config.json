@@ -118,6 +118,17 @@
       "key" : "c",
       "type" : "application",
       "value" : "/Applications/Claude.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        }
+      ],
+      "key" : "w",
+      "type" : "group"
     }
   ],
   "type" : "group"
