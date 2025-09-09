@@ -50,19 +50,16 @@ yabai -m config layout                       bsp
 yabai -m rule --add app="^Firefox$"             space=web
 yabai -m rule --add app="^Chrome$"              space=work
 
-yabai -m rule --add app="^Systeminnstillinger$" manage=off 
-yabai -m rule --add app="^Pika$"                manage=off sticky=on layer=above 
 yabai -m rule --add app="^Alfred Preferences$"  manage=off 
-yabai -m rule --add app="^Mullvad VPN$"         manage=off border=off
-yabai -m rule --add app="^Installerer$"         manage=off sticky=on
-yabai -m rule --add app="^TeamViewer$"          manage=off
-yabai -m rule --add app="^Numi$"                manage=off sticky=on
-yabai -m rule --add app="^Antinote$"            manage=off sticky=on
-yabai -m rule --add app="^Harvest$"             manage=off
-yabai -m rule --add app="^LibreOffice$"         manage=off
 yabai -m rule --add app="^Bilde i bilde$"       manage=off
 yabai -m rule --add app="^Dato$"                manage=off
+yabai -m rule --add app="^Installerer$"         manage=off sticky=on
+yabai -m rule --add app="^Kap$"                 manage=off
+yabai -m rule --add app="^LibreOffice$"         manage=off
 yabai -m rule --add app="^LuLu$"                manage=off sticky=on layer=above 
+yabai -m rule --add app="^Numi$"                manage=off sticky=on
+yabai -m rule --add app="^Pika$"                manage=off sticky=on layer=above 
+yabai -m rule --add app="^Systeminnstillinger$" manage=off 
 
 yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
 yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --focus next; sleep 0.01; yabai -m space --focus prev'
