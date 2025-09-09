@@ -29,7 +29,7 @@ Host hass
   User root
 
 Host anton
-  HostName 192.168.1.238
+  HostName 192.168.1.121
   Port 22
   User tim
 
