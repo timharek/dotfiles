@@ -68,6 +68,7 @@ automatically-unhide-macos-hidden-apps = false
     # - Letters.        a, b, c, ..., z
     # - Numbers.        0, 1, 2, ..., 9
     # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+    # 
     # - F-keys.         f1, f2, ..., f20
     # - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
     #                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
@@ -100,6 +101,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-j = 'focus down'
     alt-k = 'focus up'
     alt-l = 'focus right'
+    alt-f = 'fullscreen'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
@@ -118,20 +120,18 @@ automatically-unhide-macos-hidden-apps = false
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
     alt-6 = 'workspace 6'
-    alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    alt-shift-1 = 'move-node-to-workspace 1'
-    alt-shift-2 = 'move-node-to-workspace 2'
-    alt-shift-3 = 'move-node-to-workspace 3'
-    alt-shift-4 = 'move-node-to-workspace 4'
-    alt-shift-5 = 'move-node-to-workspace 5'
-    alt-shift-6 = 'move-node-to-workspace 6'
-    alt-shift-7 = 'move-node-to-workspace 7'
-    alt-shift-8 = 'move-node-to-workspace 8'
-    alt-shift-9 = 'move-node-to-workspace 9'
+    cmd-ctrl-1 = 'move-node-to-workspace 1'
+    cmd-ctrl-2 = 'move-node-to-workspace 2'
+    cmd-ctrl-3 = 'move-node-to-workspace 3'
+    cmd-ctrl-4 = 'move-node-to-workspace 4'
+    cmd-ctrl-5 = 'move-node-to-workspace 5'
+    cmd-ctrl-6 = 'move-node-to-workspace 6'
+    cmd-ctrl-8 = 'move-node-to-workspace 8'
+    cmd-ctrl-9 = 'move-node-to-workspace 9'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -160,3 +160,26 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+[[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = 'move-node-to-workspace 1' 
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = 'move-node-to-workspace 2' 
+[[on-window-detected]]
+    if.app-id = 'org.whispersystems.signal-desktop'
+    run = 'move-node-to-workspace 3' 
+[[on-window-detected]]
+    if.app-id = 'com.apple.mail'
+    run = 'move-node-to-workspace 9' 
+
+[workspace-to-monitor-force-assignment]
+    1 = 1
+    2 = 'main'
+    3 = 'main'
+    4 = 'main'
+    5 = 'secondary'
+    6 = 'secondary'
+    8 = 'secondary'
+    9 = 'secondary'
